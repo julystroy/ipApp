@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/mipmap-xhdpi-v4/icon_narrow_right_red.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/res/mipmap-xhdpi/icon_narrow_right_red.png"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/mipmap-xhdpi-v4/ic_launcher.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    }
+]

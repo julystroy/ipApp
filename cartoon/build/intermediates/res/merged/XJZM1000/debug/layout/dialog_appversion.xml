@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_gravity="center"
+              android:layout_width="282.7dp"
+              android:layout_height="381.7dp"
+              android:background="@drawable/bonus_background2">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_appversion_bg"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="40dp"
+    android:orientation="vertical">
+    <TextView
+        android:text="检测到新版本"
+        android:gravity="center"
+        android:textSize="21.1sp"
+        android:textStyle="bold"
+        android:textColor="#2a2b2e"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_app_version"
+        android:textColor="#2a2b2e"
+        android:text="[- v1.0.1 -]"
+        android:gravity="center"
+        android:textSize="16.3sp"
+        android:textStyle="bold"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="210dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_content_updata"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="27dp"
+        android:text="1.海阔贫与虚伪，调高忍耐欧菲"
+        android:textSize="16.4sp"
+        android:lineSpacingExtra="3dp"
+        android:textColor="#585858"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</ScrollView>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#FFBFB6B3"/>
+
+ <LinearLayout
+     android:id="@+id/ll_is_updata"
+     android:layout_width="match_parent"
+     android:layout_height="50.3dp"
+     android:orientation="horizontal"
+     >
+     <TextView
+         android:id="@+id/tv_wait_updata"
+         android:text="稍后升级"
+         android:gravity="center"
+         android:textSize="18.3sp"
+         android:textColor="@color/black"
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="match_parent"/>
+     <View
+         android:background="#FFBFB6B3"
+         android:layout_width="1dp"
+         android:layout_height="match_parent"/>
+
+     <TextView
+         android:id="@+id/tv_updata"
+         android:text="立即升级"
+         android:gravity="center"
+         android:textColor="#e8481b"
+         android:textSize="18.3sp"
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="match_parent"/>
+ </LinearLayout>
+    <TextView
+        android:id="@+id/tv_force_updata"
+        android:layout_gravity="bottom"
+        android:text="立即升级"
+        android:gravity="center"
+
+        android:textColor="#e8481b"
+        android:textSize="18.3sp"
+        android:layout_width="match_parent"
+        android:layout_height="50.3dp"
+        android:visibility="gone"/>
+    </LinearLayout>
+</FrameLayout>

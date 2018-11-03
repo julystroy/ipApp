@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/umeng_socialize_nav_bar_bg_pad.9.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/bundles/debug/res/drawable-hdpi-v4/umeng_socialize_nav_bar_bg_pad.9.png"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/ic_logo.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/bundles/debug/res/drawable-hdpi-v4/ic_logo.png"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/umeng_socialize_oauth_check_on.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/bundles/debug/res/drawable-hdpi-v4/umeng_socialize_oauth_check_on.png"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/umeng_socialize_oauth_check_off.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/bundles/debug/res/drawable-hdpi-v4/umeng_socialize_oauth_check_off.png"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4/umeng_socialize_light_bar_bg_pad.9.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/bundles/debug/res/drawable-hdpi-v4/umeng_socialize_light_bar_bg_pad.9.png"
+    }
+]

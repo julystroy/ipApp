@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:background="@color/color_title_bg"
+              android:fitsSystemWindows="true"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_back_public"/>
+
+<FrameLayout
+    android:id="@+id/fl_question"
+    android:visibility="gone"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/question_bg">
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:indeterminateDrawable="@drawable/progressbar_rote"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center|center_vertical"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+       />
+    <LinearLayout
+        android:id="@+id/ll_stone"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="15dp"
+        android:background="@color/black_light"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/now_stone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/color_white"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="当前灵石"/>
+        <TextView
+            android:id="@+id/get_stone"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/color_white"
+            android:layout_height="wrap_content"
+            android:text="已获得灵石00"/>
+
+
+        <TextView
+            android:id="@+id/get_bonus"
+            android:layout_width="0dp"
+            android:gravity="right"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/color_white"
+            android:layout_height="wrap_content"
+            android:text="已获得经验00"/>
+
+    </LinearLayout>
+
+
+    <com.cartoon.view.MyViewPage
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:background="@color/color_back_tranend"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="30dp"
+        android:clipToPadding="false"
+        android:overScrollMode="never"
+        />
+
+
+</FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_question_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/question_start"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/start_question"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:background="?attr/selectableItemBackground"
+            android:src="@mipmap/start_question"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="42dp"/>
+
+        <TextView
+            android:layout_gravity="bottom"
+            android:layout_marginTop="20.7dp"
+            android:layout_marginBottom="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:lineSpacingExtra="3dp"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/day_thanks"
+            android:gravity="center"
+            android:textColor="@color/black"/>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/fl_question_end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/question_end">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="bottom"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本次每日答题获得"
+                android:textColor="@color/color_white"
+                android:gravity="center"
+                android:background="@mipmap/question_desc"/>
+            <TextView
+                android:id="@+id/tv_daily_stone"
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#414963"
+                android:text="灵石：+"/>
+            <TextView
+                android:id="@+id/tv_daily_bonus"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="22dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#414963"
+                android:text="经验：+"/>
+            <TextView
+                android:id="@+id/tv_sect_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共答对5题可以额外获得"
+                android:textColor="@color/color_white"
+                android:gravity="center"
+                android:background="@mipmap/question_desc"/>
+            <TextView
+                android:id="@+id/tv_sect_bonus"
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#414963"
+                android:text="经验：+"/>
+            <TextView
+                android:id="@+id/tv_sect_contribution"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#414963"
+                android:text="       宗门贡献：+"/>
+            <ImageView
+                android:id="@+id/iv_end"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:background="?attr/selectableItemBackground"
+                android:src="@mipmap/end_question"/>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

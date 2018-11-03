@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="pickup.image.album_name_bar_dark">@android:color/black</color>
+    <color name="pickup.image.album_name_bar_default">#BB000000</color>
+    <color name="pickup.image.dummy">#88000000</color>
+    <color name="pickup.image.dummy.transparent">@android:color/transparent</color>
+    <color name="pickup.image.preview.bar.bg">#99000000</color>
+    <color name="pickup.image.preview.done.text.color">#AA00FF00</color>
+    <color name="pickup.image.selected_image_bg">#44000000</color>
+    <declare-styleable name="SelectableImageView"><attr format="boolean" name="pi_selectable"/><attr format="color" name="pi_selectedColor"/></declare-styleable>
+    <dimen name="pi_album_item_divider_height">8dp</dimen>
+    <dimen name="pi_album_name_bar_height">48dp</dimen>
+    <dimen name="pi_album_selector_item_height">88dp</dimen>
+    <string name="pi_str_choose_image">Pickup Image</string>
+    <string name="pi_str_done">Done</string>
+    <string name="pi_str_preview">Preview</string>
+    <string name="pickup_image_all_images">All</string>
+    <string name="pickup_image_count_unit">%1$s Photos</string>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="PickUpImageBlackTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@android:color/black</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="android:alpha">170</item>
+    </style>
+</resources>

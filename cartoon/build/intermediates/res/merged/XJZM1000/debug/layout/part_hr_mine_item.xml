@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fbfbfb"
+    android:orientation="horizontal"
+    android:weightSum="4">
+
+<LinearLayout
+    android:id="@+id/ll_state"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_marginTop="10.7dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="动态"
+        android:textColor="#2F2F2F" />
+
+
+    <TextView
+        android:id="@+id/tv_state_count"
+        android:layout_marginTop="5.3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#8c8c8c"
+        android:text="0"
+      />
+</LinearLayout>
+
+    <include layout="@layout/part_line_hr"/>
+    <LinearLayout
+        android:id="@+id/ll_package"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10.7dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_package"
+            android:textColor="#2F2F2F" />
+
+
+        <TextView
+            android:id="@+id/tv_package_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8c8c8c"
+            android:layout_marginTop="5.3dp"
+            android:text="0"
+            />
+    </LinearLayout>
+    <include layout="@layout/part_line_hr"/>
+    <LinearLayout
+        android:id="@+id/ll_task"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10.7dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/my_task"
+            android:textColor="#2F2F2F" />
+
+
+        <TextView
+            android:id="@+id/tv_task_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8c8c8c"
+            android:layout_marginTop="5.3dp"
+            android:text="0"
+            />
+    </LinearLayout>
+    <include layout="@layout/part_line_hr"/>
+    <LinearLayout
+        android:id="@+id/ll_sort"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.7dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="排行"
+            android:textColor="#2F2F2F" />
+
+
+        <TextView
+            android:id="@+id/tv_charts_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8c8c8c"
+            android:layout_marginTop="5.3dp"
+            android:text="0"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
+

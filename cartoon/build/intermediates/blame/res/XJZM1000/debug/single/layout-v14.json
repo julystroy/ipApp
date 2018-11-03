@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/layout-v14/md_stub_progress.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.5.9/res/layout-v14/md_stub_progress.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/layout-v14/md_stub_progress_indeterminate_horizontal.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.5.9/res/layout-v14/md_stub_progress_indeterminate_horizontal.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/layout-v14/md_stub_progress_indeterminate.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.5.9/res/layout-v14/md_stub_progress_indeterminate.xml"
+    }
+]

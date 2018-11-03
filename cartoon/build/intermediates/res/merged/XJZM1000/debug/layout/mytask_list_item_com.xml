@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_item"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+     >
+        <ImageView
+            android:id="@+id/iv_task_state"
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/icon_task_sign"
+            />
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/iv_task_state"
+            android:id="@+id/use_task_info"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_task_item_title"
+                android:layout_width="160dp"
+                android:ellipsize="end"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:text="第一章：猴头出世"
+                android:textSize="16sp"
+                android:textColor="#1b1b1b"
+                />
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/user_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+60"
+                    android:textColor="#f86442"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/jingyan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="经验值"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="13dp"
+                    android:textColor="#666666"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/user_stone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+1"
+                    android:textColor="#f86442"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/stone"
+                    android:layout_marginLeft="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="灵石"
+                    android:textColor="#8c8c8c"
+                    android:textSize="10sp"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/task_count"
+            android:layout_alignParentRight="true"
+            android:layout_width="51dp"
+            android:layout_height="22dp"
+            android:text="剩余1"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:background="@drawable/vote_background_select"
+            android:textColor="@color/color_white"
+            android:textSize="13sp"/>
+
+
+    </RelativeLayout>
+        <View
+            android:id="@+id/line"
+            android:background="#D4D4D4"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp">
+        </View>
+    </LinearLayout>
+    <View
+        android:id="@+id/view"
+        android:visibility="gone"
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="5dp">
+    </View>
+   <!-- <LinearLayout
+        android:id="@+id/ll_string_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="9.3dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="11.3dp"
+            android:text="活动任务"
+            android:textSize="13.3sp"
+            android:textColor="#8c8c8c"/>
+        <include layout="@layout/part_line"/>
+    </LinearLayout>-->
+</LinearLayout>

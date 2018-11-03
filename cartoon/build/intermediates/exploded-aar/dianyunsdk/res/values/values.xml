@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="base_color_blue">#3abaea</color>
+    <color name="black">#000000</color>
+    <color name="red">#ff0000</color>
+    <dimen name="action_bar_height">48dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="control_panel_button_padding">30dp</dimen>
+    <dimen name="corner">4dp</dimen>
+    <dimen name="dialog_item_width">200dp</dimen>
+    <dimen name="download_tips_height">42dp</dimen>
+    <dimen name="download_tips_padding">3dp</dimen>
+    <dimen name="download_tips_width">144dp</dimen>
+    <dimen name="feature_cycle_item_height">222dp</dimen>
+    <dimen name="hud_height">200dip</dimen>
+    <dimen name="hud_width">120dip</dimen>
+    <dimen name="qidialogfontsize">15sp</dimen>
+    <dimen name="share_icon_size">30dp</dimen>
+    <dimen name="share_item_margin">18dp</dimen>
+    <dimen name="share_item_width">50dp</dimen>
+    <dimen name="spacing_medium">30dp</dimen>
+    <dimen name="tab_height">51dp</dimen>
+    <dimen name="time_label_margin_right">50dp</dimen>
+    <dimen name="time_label_margin_top">23dp</dimen>
+    <dimen name="title_text_size">20sp</dimen>
+    <dimen name="vksize">70dip</dimen>
+    <string name="announcement01">良好的游戏体验，至少需要2Mb带宽，推荐5Mb以上带宽</string>
+    <string name="announcement02">资源加载都在云端运行，不会消耗本机流量</string>
+    <string name="announcement03">云端试玩游戏不保存进度，喜欢就下载吧</string>
+    <string name="dianyun_app_name">ChangxianAndroidSdk</string>
+    <string name="dianyun_cancel">取消</string>
+    <string name="dianyun_cannot_download_tips">暂无法下载，请稍后再试</string>
+    <string name="dianyun_check_high_tips">检测到您的网速很快，切换到高清模式，更好地享受游戏吧</string>
+    <string name="dianyun_check_smooth_tips">检测到您的网速较慢，玩起来可能会卡顿，切换到流畅模式来玩吧</string>
+    <string name="dianyun_download_tips">开始下载，我的下载中查看进度</string>
+    <string name="dianyun_error_data_failed">获取数据失败，请重试</string>
+    <string name="dianyun_error_network">网络错误，请重试</string>
+    <string name="dianyun_error_no_device">没有空闲设备，请稍后再试！</string>
+    <string name="dianyun_exit_app">再按一次退出程序</string>
+    <string name="dianyun_exit_preview">再按一次退出体验</string>
+    <string name="dianyun_go_on">继续</string>
+    <string name="dianyun_load_data_fail">页面加载失败，点击刷新</string>
+    <string name="dianyun_load_error">加载失败，请重试</string>
+    <string name="dianyun_loading">正在加载...</string>
+    <string name="dianyun_loading_data">正在努力获取数据中...</string>
+    <string name="dianyun_loading_short">正在处理...</string>
+    <string name="dianyun_no_avaliable_network">网络不可用，点击设置网络</string>
+    <string name="dianyun_ok">确定</string>
+    <string name="dianyun_remind_exit_game">点击确定退出游戏</string>
+    <string name="dianyun_summary">全球精品手游试玩平台</string>
+    <string name="dianyun_tips">提示</string>
+    <string name="dianyun_tips_mobile_network">您当前正在使用移动网络，继续播放将产生流量费用</string>
+    <string name="dianyun_video_latency">当前网络环境不佳，画面将会卡顿</string>
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light"/>
+    <style name="AppBaseTheme.NoTitleBar.Fullscreen" parent="Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme"/>
+    <style name="CXAlertDialogButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="CXAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Color used for the buttons -->
+        <item name="colorAccent">@color/base_color_blue</item>
+        <item name="buttonStyle">@style/CXAlertDialogButtonStyle</item>
+    </style>
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+</resources>

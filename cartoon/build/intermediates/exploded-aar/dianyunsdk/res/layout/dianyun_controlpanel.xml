@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_exit"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:background="@drawable/btn_bg"
+            android:text="退出"
+            android:textColor="#3abaea"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_quality"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:background="@drawable/btn_bg"
+            android:text="画质"
+            android:textColor="#3abaea"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_download"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:background="@drawable/btn_bg"
+            android:text="下载"
+            android:textColor="#3abaea"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/layout_quality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_high_quality"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:background="@drawable/btn_bg"
+            android:text="高清"
+            android:textColor="#3abaea"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_low_quality"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="50dp"
+            android:background="@drawable/btn_bg"
+            android:text="流畅"
+            android:textColor="#666666"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+</FrameLayout>

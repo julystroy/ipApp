@@ -1,0 +1,5 @@
+<!-- From: file:/Users/castorflex/work/android/VerticalViewPager/library/src/main/AndroidManifest.xml -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="2" android:versionName="19.0.1" package="fr.castorflex.android.verticalviewpager">
+    <uses-sdk android:minSdkVersion="4" android:targetSdkVersion="19"/>
+
+</manifest>

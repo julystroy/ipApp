@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_bg"
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/et_input"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bonus_background"
+        android:gravity="center_vertical"
+        android:drawableLeft="@mipmap/icon_pen"
+
+        android:drawablePadding="3dp"
+        android:text="写评论..."
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:layout_marginLeft="16.7dp"
+        android:layout_marginRight="13.3dp"
+        android:layout_marginTop="6.7dp"
+        android:layout_marginBottom="6.7dp"
+        android:textColor="#000"
+        android:textSize="12.5sp" />
+    <TextView
+        android:id="@+id/send_bt"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+       android:layout_marginRight="16.7dp"
+        android:layout_marginLeft="13.3dp"
+        android:layout_toRightOf="@+id/et_input"
+        android:background="@drawable/corners_bg"
+        android:text="发送"
+        android:gravity="center"
+        android:padding="6dp"
+        android:textSize="13sp"
+        android:visibility="gone"
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/ll_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        >
+
+
+        <ImageView
+            android:id="@+id/iv_com"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="?attr/selectableItemBackground"
+            android:visibility="visible"
+            android:src="@mipmap/icon_cartoon_message_p"/>
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:background="@drawable/red_back"
+            android:text="0"
+            android:layout_marginLeft="18dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#fff"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textSize="8.5sp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/ll_like"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="3dp"
+        android:layout_marginRight="16.3dp"
+        android:layout_marginLeft="13.3dp"
+        >
+
+
+        <ImageView
+            android:id="@+id/tv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="?attr/selectableItemBackground"
+            android:visibility="visible"
+            android:src="@drawable/icon_cartoon_bigfocus"/>
+        <TextView
+            android:id="@+id/tv_comment_num"
+            android:background="@drawable/red_back"
+            android:text="0"
+            android:layout_marginLeft="17dp"
+
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#fff"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:textSize="8.5sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_download"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="?attr/selectableItemBackground"
+        android:paddingRight="16.7dp"
+        android:scaleType="center"
+        tools:visibility="visible"
+        android:src="@mipmap/icon_share"
+        />
+
+</LinearLayout>

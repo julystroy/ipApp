@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/ViewPagerIndicator/build/intermediates/res/merged/androidTest/debug/color/vpi__dark_theme.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/ViewPagerIndicator/build/intermediates/bundles/debug/res/color/vpi__dark_theme.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/ViewPagerIndicator/build/intermediates/res/merged/androidTest/debug/color/vpi__light_theme.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/ViewPagerIndicator/build/intermediates/bundles/debug/res/color/vpi__light_theme.xml"
+    }
+]

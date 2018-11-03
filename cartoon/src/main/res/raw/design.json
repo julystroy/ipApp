@@ -1,0 +1,24 @@
+{
+  "code": 0,
+  "ver": "2017073113",
+  "design": [
+    {
+      "level": 0,
+      "config": 1010,
+      "type": 0,
+      "name": "活动",
+      "position": 1,
+      "api": "/book/api/activity/list",
+      "contentapi": "/book/api/activity/content"
+    },
+    {
+      "level": 1,
+      "config": 70110,
+      "type": 7,
+      "name": "凡人Q漫",
+      "position": 1,
+      "api": "/book/api/qman/list",
+      "contentapi": "/book/api/qman/content"
+    }
+  ]
+}

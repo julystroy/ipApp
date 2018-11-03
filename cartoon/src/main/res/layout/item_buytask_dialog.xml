@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="268.7dp"
+              android:layout_height="wrap_content"
+              android:background="@drawable/bonus_background"
+              android:layout_gravity="center"
+              android:gravity="center">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="30dp"
+    android:paddingBottom="20dp"
+    android:text="购买任务次数"
+    android:textColor="#2f2f2f"
+    android:textSize="15.3sp"/>
+
+    <LinearLayout
+        android:layout_width="268.7dp"
+        android:layout_height="32.7dp"
+        android:layout_marginTop="32.7dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/bt_left"
+            android:layout_width="28.7dp"
+            android:layout_height="match_parent"
+            android:text="-"
+            android:gravity="center"
+            android:textSize="25.3sp"
+            android:textColor="#2f2f2f"
+            android:background="@drawable/selector_background_red"/>
+        <TextView
+            android:id="@+id/tv_number"
+            android:layout_width="115.3dp"
+            android:layout_height="match_parent"
+            android:text="1"
+            android:textColor="#2f2f2f"
+            android:gravity="center"
+            android:background="@drawable/fang_background"
+            android:textSize="25sp"/>
+        <TextView
+            android:id="@+id/bt_right"
+            android:layout_width="28.7dp"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:textColor="#2f2f2f"
+            android:gravity="center"
+            android:textSize="25.3sp"
+            android:background="@drawable/selector_background_red"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/buy_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今天还可以购买X次"
+        android:layout_marginTop="13.3dp"
+        android:textColor="#2f2f2f"
+        android:textSize="13.3sp"/>
+    
+    <TextView
+        android:id="@+id/stone_count"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24.7dp"
+        android:gravity="center"
+        android:background="@drawable/vote_background_select"
+        android:textColor="#fff"
+        android:layout_marginBottom="30dp"
+        android:text="50灵石"/>
+
+</LinearLayout>

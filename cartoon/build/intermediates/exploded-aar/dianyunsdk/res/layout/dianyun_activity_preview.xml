@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true">
+
+    <cn.idianyun.streaming.widget.H264RawView
+        android:id="@+id/dianyun_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:keepScreenOn="true" />
+
+    <cn.idianyun.streaming.widget.LoadingView
+        android:id="@+id/dianyun_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/dianyun_tv_play_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="2dp"
+        android:layout_marginRight="5dp"
+        android:text="00:00"
+        android:textColor="#707070"
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+    <cn.idianyun.streaming.widget.VDHLayout
+        android:id="@+id/dianyun_float_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.idianyun.streaming.widget.ControlPannel
+            android:id="@+id/dianyun_control_pannel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/dianyun_btn_logo"
+            android:layout_width="51dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="50dp"
+            android:background="@android:color/transparent"
+            android:padding="4dp"
+            android:src="@drawable/logo" />
+
+        <cn.idianyun.streaming.widget.DownloadTipsView
+            android:id="@+id/dianyun_download_tips_view"
+            android:layout_width="@dimen/download_tips_width"
+            android:layout_height="@dimen/download_tips_height"
+            android:visibility="gone" />
+    </cn.idianyun.streaming.widget.VDHLayout>
+
+    <TextView
+        android:id="@+id/dianyun_tv_announcement"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:background="#333333"
+        android:gravity="center"
+        android:text="由于您长时间无操作，将于15秒后自动退出"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+
+    <FrameLayout
+
+        android:id="@+id/ll_allrote"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/fl_rote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <cndroid.com.smoothendlesslibrary.EndLessRecyclerView
+                    android:id="@+id/recycle_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_list_bg"
+                    android:scrollbars="none"/>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <cndroid.com.smoothendlesslibrary.EndLessRecyclerView
+                android:id="@+id/collect_list1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_content_bg"
+                android:scrollbars="none"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="36.7dp"
+        android:background="@color/color_bg"
+        app:layout_behavior="com.cartoon.utils.QuickReturnFooterBehavior"
+        android:layout_gravity="top"
+        android:paddingEnd="@dimen/title_padding_right"
+        android:paddingStart="@dimen/title_padding_left">
+
+        <TextView
+            android:id="@+id/tv_desc"
+            style="@style/home_menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/quick_listen_scr"
+            style="@style/home_menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/menu_item_padding"
+            android:layout_toStartOf="@+id/tv_anthology"
+            android:drawableStart="@mipmap/quicklisten_desc"
+            android:text="@string/menu_scrible"/>
+
+        <TextView
+            android:id="@+id/tv_anthology"
+            style="@style/home_menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/menu_item_padding"
+            android:layout_toStartOf="@+id/tv_sort"
+            android:drawableStart="@mipmap/icon_reader_menu_f"
+            android:text="@string/menu_anthology"/>
+
+        <TextView
+            android:id="@+id/tv_sort"
+            style="@style/home_menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:drawableStart="@mipmap/icon_sort"
+            android:text="@string/sort_asc"/>
+
+        <TextView
+            android:id="@+id/tv_share"
+            style="@style/home_menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/menu_item_padding"
+            android:drawableStart="@mipmap/icon_cartoon_share_p"
+            android:text="@string/menu_share"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_bg"
+    android:padding="25dp">
+
+    <TableLayout
+        android:id="@+id/tb_reasons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+        android:padding="2dip">
+
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*"
+        android:padding="2dip">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12.3dp">
+
+            <EditText
+                android:id="@+id/et_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_span="2"
+                android:gravity="top|left"
+                android:background="@drawable/et_feedback_bg"
+                android:textColorHint="@color/grid_line"
+                android:textSize="@dimen/text_size_dialog_textView"
+                android:padding="10dp"
+                android:hint="更多建议..."/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="25dp">
+
+            <EditText
+                android:id="@+id/et_QQNum"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_span="2"
+                android:background="@drawable/et_feedback_bg"
+                android:textColorHint="@color/grid_line"
+                android:textSize="@dimen/text_size_dialog_textView"
+                android:padding="10dp"
+                android:hint="QQ号码"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size_large"
+                android:layout_marginRight="14.3dp"
+                android:textColor="@color/checkbox_text"
+                android:background="@drawable/btn_submit_not_allowed_bg"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="1dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_submit_bg"
+                android:text="@string/submit"
+                android:textColor="@drawable/btn_submit_text"
+                android:enabled="false"
+                android:textSize="@dimen/text_size_large" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

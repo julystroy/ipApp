@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item type="id" name="position_book_friend_moment" />
+    <item type="id" name="position_photo" />
+    <item type="id" name="id_photo" />
+
+    <item name="adapter_item_tag_key" type="id"/>
+
+    <!-- MESSAGE LIST ITEM -->
+    <item name="bubble" type="id" />
+    <item name="messageText" type="id" />
+    <item name="name" type="id" />
+    <item name="user_level" type="id" />
+    <item name="sect_job" type="id" />
+    <item name="messageUserAvatar" type="id" />
+    <item name="messageTime" type="id" />
+    <item name="image" type="id" />
+    <item name="imageOverlay" type="id" />
+
+    <!-- MESSAGE INPUT -->
+    <item name="attachmentButton" type="id" />
+    <item name="messageSendButton" type="id" />
+    <item name="attachmentButtonSpace" type="id" />
+    <item name="sendButtonSpace" type="id" />
+    <item name="messageInput" type="id" />
+
+    <item type="id" name="expandable_text"/>
+    <item type="id" name="expand_collapse"/>
+    <item type="id" name="expand_collapse_shadow"/>
+</resources>

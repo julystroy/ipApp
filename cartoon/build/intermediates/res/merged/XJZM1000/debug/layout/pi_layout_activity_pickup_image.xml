@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pi_app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            pi_app:layout_scrollFlags="scroll|enterAlways|snap"
+            pi_app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/pi_album_name_bar_height"
+        android:scrollbars="vertical"
+        pi_app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pi_album_name_bar_height"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:id="@+id/iv_album_name_bar_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/pickup_image_album_name_bar_background" />
+
+        <TextView
+            android:id="@+id/tv_current_album_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:drawableRight="@mipmap/ip_corner"
+            android:gravity="center"
+            android:minWidth="30dp"
+            android:onClick="onClickCurrentAlbumName"
+            android:paddingLeft="8dp"
+            android:text="Album"
+            android:textColor="#FFF" />
+
+        <include layout="@layout/pi_layout_part_done_with_count" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+

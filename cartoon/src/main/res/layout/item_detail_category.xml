@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.cartoon.view.RoundCornerImageView
+            android:id="@+id/iv_app_logo"
+            android:layout_width="@dimen/detail_logo"
+            android:layout_height="@dimen/detail_logo"
+            android:layout_margin="@dimen/detail_header_margin"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/ll_ratingView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/detail_header_margin"
+            android:layout_marginRight="@dimen/detail_header_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-10dp"
+                android:layout_marginTop="-5dp"
+                android:includeFontPadding="false"
+                android:padding="0dp"
+                android:text="9.1"
+                android:textColor="@color/base_color_blue"
+                android:textSize="@dimen/detail_rating_text" />
+
+            <TextView
+                android:id="@+id/tv_rating_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rating_count"
+                android:textColor="@color/subtitle_text_color"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_app_logo"
+            android:layout_alignTop="@id/iv_app_logo"
+            android:layout_toLeftOf="@id/ll_ratingView"
+            android:layout_toRightOf="@id/iv_app_logo">
+
+            <TextView
+                android:id="@+id/tv_app_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="皇室战争：部落冲突之皇室战争"
+                android:textColor="@color/color_title_font"
+                android:textSize="@dimen/title_text_size" />
+
+            <LinearLayout
+                android:id="@+id/ll_firm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_app_name"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/manufacturer"
+                    android:textColor="@color/subtitle_text_color"
+                    android:textSize="@dimen/text_size_medium_small" />
+
+                <TextView
+                    android:id="@+id/tv_manufacturer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/manufacturer"
+                    android:textColor="@color/color_title_font"
+                    android:textSize="@dimen/text_size_medium_small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_firm"
+                android:layout_marginTop="5.5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/size"
+                    android:textColor="@color/subtitle_text_color"
+                    android:textSize="@dimen/text_size_medium_small" />
+
+                <TextView
+                    android:id="@+id/tv_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/size"
+                    android:textColor="@color/color_title_font"
+                    android:textSize="@dimen/text_size_medium_small" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_play_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-2dp"
+                android:text="@string/play_count"
+                android:textColor="@color/color_title_font"
+                android:textSize="@dimen/text_size_medium_small" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/detail_header_margin"
+        android:paddingLeft="@dimen/detail_header_margin">
+
+        <TextView
+            android:id="@+id/tv_app_categorie01"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:background="@drawable/detail_tag_bg01"
+            android:gravity="center"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:text="休闲"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_medium_small" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_separator_line_high"
+        android:background="@color/separator_line" />
+
+    <ImageView
+        android:id="@+id/iv_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="40dp"
+        android:padding="18dp"
+        android:src="@drawable/icon_selection"
+        android:visibility="gone" />
+
+</LinearLayout>

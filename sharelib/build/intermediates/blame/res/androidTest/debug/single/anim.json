@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/res/merged/androidTest/debug/anim/umeng_socialize_fade_out.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/bundles/debug/res/anim/umeng_socialize_fade_out.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/res/merged/androidTest/debug/anim/umeng_socialize_shareboard_animation_out.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/bundles/debug/res/anim/umeng_socialize_shareboard_animation_out.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/res/merged/androidTest/debug/anim/umeng_socialize_shareboard_animation_in.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/bundles/debug/res/anim/umeng_socialize_shareboard_animation_in.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/res/merged/androidTest/debug/anim/umeng_socialize_fade_in.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/bundles/debug/res/anim/umeng_socialize_fade_in.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/res/merged/androidTest/debug/anim/umeng_socialize_slide_out_from_bottom.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/bundles/debug/res/anim/umeng_socialize_slide_out_from_bottom.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/res/merged/androidTest/debug/anim/umeng_socialize_slide_in_from_bottom.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/sharelib/build/intermediates/bundles/debug/res/anim/umeng_socialize_slide_in_from_bottom.xml"
+    }
+]

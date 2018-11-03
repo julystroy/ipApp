@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/layout-ldrtl-v17/md_listitem_singlechoice.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.5.9/res/layout-ldrtl-v17/md_listitem_singlechoice.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/layout-ldrtl-v17/md_listitem_multichoice.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.5.9/res/layout-ldrtl-v17/md_listitem_multichoice.xml"
+    }
+]

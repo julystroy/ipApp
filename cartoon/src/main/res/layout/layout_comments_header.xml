@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rlayout_comment_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_green_bar"
+            android:layout_width="@dimen/blue_line_width"
+            android:layout_height="@dimen/blue_line_height"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@color/subtitle_text_green" />
+
+        <TextView
+            android:id="@+id/tv_comments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_margin_to_blue_line"
+            android:layout_toRightOf="@id/iv_green_bar"
+            android:text="@string/comment"
+            android:textColor="@color/subtitle_text_color"
+            android:textSize="@dimen/title_after_blue_line" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/comment_more"
+            android:textColor="@color/subtitle_text_green"
+            android:textSize="@dimen/text_size_medium_small" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+
+        <com.cartoon.view.RoundImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="@dimen/user_avatar_medium"
+            android:layout_height="@dimen/user_avatar_medium"
+            android:layout_centerVertical="true"
+            android:background="@drawable/default_user_avatar" />
+
+        <ImageView
+            android:id="@+id/iv_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_avatar"
+            android:background="@drawable/comment_ed_bg" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_build_sect"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="5dp"
+              android:layout_marginTop="10.7dp"
+              android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_sect_n"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="每日贡献:"
+            android:textSize="14.4sp"
+            android:textColor="#666666" />
+        <TextView
+            android:id="@+id/tv_sect_cheif"
+            android:layout_width="wrap_content"
+            android:maxWidth="60dp"
+            android:layout_height="wrap_content"
+            android:text="大帅B"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textSize="14.4sp"
+            android:textColor="#666666" />
+
+
+        <TextView
+            android:id="@+id/tv_sect_l"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="总贡献:"
+            android:textSize="14.4sp"
+            android:textColor="#666666" />
+        <TextView
+            android:id="@+id/tv_sect_pupil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6/20"
+            android:textSize="14.4sp"
+            android:textColor="#666666" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="攻击/防御数:"
+        android:textSize="14.4sp"
+        android:textColor="#666666" />
+    <TextView
+        android:id="@+id/tv_sect_fight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6/20"
+        android:textSize="14.4sp"
+        android:textColor="#666666" />
+
+</LinearLayout>

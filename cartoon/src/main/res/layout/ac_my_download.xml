@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/color_title_bg"
+        android:paddingEnd="@dimen/title_padding_right">
+
+        <ImageView
+            android:id="@+id/bt_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:paddingEnd="@dimen/title_padding_right"
+            android:paddingStart="@dimen/title_padding_left"
+            android:src="@mipmap/icon_back_black" />
+
+       <com.smarttablayout.SmartTabLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            app:stl_defaultTabTextColor="@color/tab_title_color"
+            app:stl_defaultTabTextHorizontalPadding="@dimen/title_item_width"
+            app:stl_defaultTabTextSize="@dimen/font_title_size"
+            app:stl_dividerColor="@color/transparent"
+            app:stl_dividerThickness="0dp"
+            app:stl_indicatorColor="@color/color_title_font_focus"
+            app:stl_indicatorGravity="bottom"
+            app:stl_indicatorInterpolation="linear"
+            app:stl_indicatorThickness="@dimen/title_item_indicator_height"
+            app:stl_underlineColor="@color/transparent"
+            app:stl_underlineThickness="0dp" />
+
+        <TextView
+            android:id="@+id/bt_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="4dp"
+            android:text="@string/btn_edit" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:background="@color/color_line_bg" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

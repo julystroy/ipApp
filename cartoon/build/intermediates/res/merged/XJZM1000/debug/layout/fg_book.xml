@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f2f2f2">
+    <!--<include layout="@layout/title_layout" />-->
+
+    <!--&lt;!&ndash;top view :user head and user name&ndash;&gt;-->
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="80dp"-->
+        <!--android:background="#fdfdfd"-->
+        <!--android:layout_marginTop="22dp"-->
+        <!--android:layout_marginBottom="@dimen/px22">-->
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_mine_user_icon"-->
+            <!--android:src="@mipmap/icon_user_head"-->
+            <!--android:layout_width="@dimen/px140"-->
+            <!--android:layout_height="@dimen/px140"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="@dimen/px34"/>-->
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_mine_login"-->
+            <!--android:visibility="gone"-->
+            <!--android:layout_width="@dimen/px198"-->
+            <!--android:layout_height="@dimen/px80"-->
+            <!--android:text="登录"-->
+            <!--android:textSize="@dimen/px34"-->
+            <!--android:textColor="#e84817"-->
+            <!--android:background="@color/tab_color_white"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@id/iv_mine_user_icon"-->
+            <!--android:layout_marginLeft="@dimen/px10"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_mine_user_name"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:singleLine="true"-->
+            <!--android:text="用户名"-->
+            <!--android:textSize="40px"-->
+            <!--android:textColor="#161616"-->
+            <!--android:layout_marginLeft="@dimen/px10"-->
+            <!--android:layout_toRightOf="@id/iv_mine_user_icon"-->
+            <!--android:layout_marginTop="@dimen/px50"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_mine_user_id"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="id isiddd"-->
+            <!--android:textSize="32px"-->
+            <!--android:layout_toRightOf="@id/iv_mine_user_icon"-->
+            <!--android:layout_below="@id/tv_mine_user_name"-->
+            <!--android:layout_marginTop="10px"-->
+            <!--android:layout_alignLeft="@id/tv_mine_user_name"/>-->
+        <!--<ImageView-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_width="34dp"-->
+            <!--android:layout_height="34dp"-->
+            <!--android:layout_marginRight="@dimen/px34"-->
+            <!--android:src="@mipmap/icon_narrow_right"-->
+            <!--android:layout_alignParentRight="true"/>-->
+    <!--</RelativeLayout>-->
+
+    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="22dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="1dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:background="#d4d4d4"/>&ndash;&gt;-->
+    <!--<ListView-->
+        <!--android:layout_marginTop="22dp"-->
+        <!--android:id="@+id/lv_mine_info"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+    <!--</ListView>-->
+
+
+    <!--<Button-->
+        <!--android:layout_marginTop="22dp"-->
+        <!--android:id="@+id/btn_mine_logout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="98px"-->
+        <!--android:background="@color/tab_color_white"-->
+        <!--android:textSize="@dimen/px36"-->
+        <!--android:textColor="#e84817"-->
+        <!--android:text="退出登录"-->
+        <!--android:gravity="center" />-->
+
+</LinearLayout>

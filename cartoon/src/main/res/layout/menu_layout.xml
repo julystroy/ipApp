@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/fg_toolsbar"
+                android:layout_width="match_parent"
+                android:layout_height="36.7dp"
+                android:background="@color/color_bg"
+                app:layout_behavior="com.cartoon.utils.QuickReturnFooterBehavior"
+                android:layout_gravity="top"
+                android:visibility="visible"
+                android:paddingEnd="@dimen/title_padding_right"
+                android:paddingStart="@dimen/title_padding_left"
+                android:paddingRight="@dimen/title_padding_right"
+                android:paddingLeft="@dimen/title_padding_left">
+
+    <TextView
+        android:id="@+id/tv_desc"
+        style="@style/home_menu_item"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="共0章"
+        android:layout_marginLeft="14dp"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/vertical_view10"/>
+
+    <!--android:drawableStart="@mipmap/icon_download"-->
+    <TextView
+        android:id="@+id/tv_download"
+        style="@style/home_menu_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/menu_item_padding"
+        android:layout_toStartOf="@+id/tv_anthology"
+        android:text="@string/menu_download"
+        android:layout_marginRight="@dimen/menu_item_padding"
+        android:visibility="gone"
+        android:layout_toLeftOf="@+id/tv_anthology"
+        android:drawableLeft="@mipmap/listen_down"/>
+
+    <TextView
+        android:id="@+id/tv_anthology"
+        style="@style/home_menu_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:layout_toStartOf="@+id/tv_sort"
+        android:text="@string/menu_anthology"
+        android:layout_alignParentRight="true"
+        android:drawableLeft="@mipmap/icon_reader_menu_f"/>
+
+    <TextView
+        android:id="@+id/tv_sort"
+        android:visibility="gone"
+        style="@style/home_menu_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="@string/sort_asc"
+        android:layout_marginRight="14dp"
+        android:drawableLeft="@mipmap/icon_sort"/>
+
+</RelativeLayout>

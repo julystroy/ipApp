@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rl_item"
+                android:layout_width="match_parent"
+                android:layout_height="101.3dp"
+                android:background="@android:color/transparent"
+                >
+    <ImageView
+        android:id="@+id/iv_guan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:src="@mipmap/icon_guan"/>
+    <TextView
+        android:id="@+id/tv_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8.7dp"
+        android:layout_marginRight="8dp"
+        android:text="01"
+        android:gravity="center"
+        android:textSize="14.7sp"
+        android:textColor="#939393"
+        />
+
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_sort"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:layout_marginRight="5.7dp"
+        android:src="@mipmap/icon_head" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:layout_toLeftOf="@+id/tv_vote"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_rank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="石墨"
+                android:ellipsize="end"
+                android:textSize="16.7sp"
+                android:textColor="#4a4a4a"
+                />
+
+            <TextView
+                android:id="@+id/tv_creattime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9.3dp"
+                android:layout_gravity="center"
+                android:text="一小时前"
+                android:ellipsize="end"
+                android:textSize="8.3sp"
+                android:gravity="center"
+                android:textColor="#c94e4e"
+                android:paddingTop="1dp"
+                android:paddingBottom="1dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@drawable/bonus_background_red"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_rank_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8.7dp"
+            android:text="《天若有情天亦老人间道》"
+            android:textSize="14.7sp"
+            android:textColor="#737373" />
+
+
+        <LinearLayout
+            android:layout_marginTop="11.3dp"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="5dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_comment_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="票"
+                android:textColor="#737373"
+                android:textSize="11.3sp"
+                 />
+            <TextView
+                android:id="@+id/tv_vote_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13.3dp"
+                android:text="评论"
+                android:textColor="#c94e4e"
+                android:ellipsize="end"
+                android:textSize="11.3sp"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/tv_vote"
+        android:layout_width="63.7dp"
+        android:layout_height="30.7dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_marginRight="11.3dp"
+        android:text="投票"
+        android:textSize="14.7sp"
+        android:textColor="@color/color_white"
+        android:background="@drawable/vote_background_select"/>
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_alignParentBottom="true"
+          android:layout_marginLeft="32.7dp"
+          android:layout_marginRight="11.3dp"
+          android:background="#D4D4D4"
+          android:layout_width="match_parent"
+          android:layout_height="0.7dp">
+    </View>
+</RelativeLayout>
+

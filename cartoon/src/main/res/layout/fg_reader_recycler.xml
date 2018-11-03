@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <!--<android.support.v4.widget.SwipeRefreshLayout-->
+            <!--android:id="@+id/swipeRefreshLayout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+
+            <cndroid.com.smoothendlesslibrary.EndLessRecyclerView
+                android:id="@+id/recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:sel_buttonRetryText="加载失败,点击重试"
+                app:sel_loadingText="加载中" />
+        <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+        <include layout="@layout/layout_loading" />
+
+        <include layout="@layout/layout_reload" />
+
+        <include layout="@layout/layout_empty" />
+    </ViewFlipper>
+
+    <LinearLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reader_title_bar_height"
+        android:background="@color/darkest_semitransparent"
+        android:gravity="center_vertical"
+        android:paddingEnd="@dimen/title_padding_right"
+        android:paddingStart="@dimen/title_padding_left">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/item_drawable_padding"
+            android:drawableStart="@mipmap/icon_back"
+            android:gravity="center_vertical"
+            android:text="第一话"
+            android:textColor="@color/color_title_font_comic"
+            android:textSize="@dimen/font_title_size" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_reader_bottom" />
+
+</RelativeLayout>

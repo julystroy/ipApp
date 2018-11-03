@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/shaders"/></dataSet><dataSet config="XJZM1000"><source path="/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/XJZM1000/shaders"/></dataSet><dataSet config="debug"><source path="/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/debug/shaders"/></dataSet><dataSet config="XJZM1000Debug"><source path="/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/XJZM1000Debug/shaders"/></dataSet></merger>

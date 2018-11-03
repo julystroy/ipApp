@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/ll_select"
+              android:visibility="gone"
+              android:background="@color/tab_color_white"
+              android:layout_marginTop="-10dp"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/ic_novel_wen"/>
+
+    <TextView
+        android:layout_marginTop="19dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#666666"
+        android:lineSpacingExtra="3dp"
+        android:text="每次投票时间为从发布到第二天上午九点，点下按钮即是选择，答案九点之后公布，猜对将获得"/>
+
+    <TextView
+        android:id="@+id/tv_reward"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="22dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#666666"
+        android:text="奖励直接放到储物袋"/>
+    <TextView
+        android:id="@+id/novel_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:layout_marginLeft="38dp"
+        android:layout_marginRight="25dp"
+        android:text="提问：哈哈哈"
+        android:layout_marginBottom="10dp"
+        />
+
+    <com.cartoon.view.MyListview
+        android:id="@+id/lv_select"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginBottom="28dp"
+        android:divider="#00000000"
+        android:dividerHeight="0dip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

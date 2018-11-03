@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_cartoon"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <include layout="@layout/part_summary" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff">
+
+        <cndroid.com.smoothendlesslibrary.EndLessRecyclerView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:background="#fff"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/color_line_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:background="@color/color_bg"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="5dp"
+                android:paddingStart="@dimen/title_padding_left">
+
+
+
+                <EditText
+                    android:id="@+id/et_input"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bonus_background"
+                    android:gravity="center_vertical"
+                    android:hint="说点什么..."
+                    android:paddingEnd="5dp"
+                    android:paddingStart="5dp"
+                    android:layout_marginLeft="10.7dp"
+                    android:layout_marginTop="6.7dp"
+                    android:layout_marginBottom="6.7dp"
+                    android:textColor="#2f2f2f"
+                    android:textSize="12.5sp" />
+
+                <Button
+                    android:id="@+id/send_bt"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="13.3dp"
+                    android:layout_marginRight="10.7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/et_input"
+                    android:background="@drawable/corners_bg"
+                    android:text="发送"
+                    android:visibility="visible" />
+
+                <!--   <ImageView
+                       android:id="@+id/iv_share"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_centerVertical="true"
+                       android:src="@mipmap/icon_share"
+                       android:visibility="gone" />
+   -->
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

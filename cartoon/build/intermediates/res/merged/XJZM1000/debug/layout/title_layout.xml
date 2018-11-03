@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_title"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/title_bar_height"
+    android:background="@color/color_title_bg">
+
+    <ImageButton
+        android:id="@+id/bt_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:background="?attr/selectableItemBackground"
+        android:paddingEnd="@dimen/title_padding_right"
+        android:paddingStart="@dimen/title_padding_left"
+        android:src="@drawable/animal_play" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/color_title_font"
+        android:textSize="@dimen/font_title_size" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingEnd="@dimen/title_padding_right"
+        android:paddingStart="@dimen/title_padding_left"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:id="@+id/bt_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:padding="@dimen/title_button_padding"
+            android:src="@mipmap/icon_edit" />
+        <TextView
+            android:id="@+id/textPoint"
+            android:layout_width="wrap_content"
+            android:text="1"
+            android:textColor="@color/color_white"
+            android:layout_marginTop="3dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="11dp"
+            android:background="@drawable/red_bg"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+
+
+    <include
+        layout="@layout/part_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

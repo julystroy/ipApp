@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    }
+]

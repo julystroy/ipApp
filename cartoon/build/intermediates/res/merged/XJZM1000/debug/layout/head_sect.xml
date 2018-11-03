@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="#222224"
+              android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="36dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sect_name"
+            android:text="仙域"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19sp"/>
+        <TextView
+            android:id="@+id/tv_sect_level"
+            android:layout_width="35dp"
+            android:layout_height="15dp"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center"
+            android:text="LV0"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:textColor="#c94e4e"
+            android:textStyle="bold"
+            android:background="@drawable/yellow_background"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="26dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/sect_people_count"
+            android:text="成员 00/00"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"/>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="14dp"
+            android:layout_gravity="center_vertical"
+            android:background="#fff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+           />
+
+        <TextView
+            android:id="@+id/click_btn"
+            android:text="退出宗门"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@mipmap/icon_sect_arrow"
+            android:drawablePadding="11dp"
+            android:textSize="12sp"/>
+    </LinearLayout>
+    <com.cartoon.utils.MySeekBar
+        android:id="@+id/sb_bonus_point"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="5.3dp"
+        android:minHeight="5.3dp"
+        android:splitTrack="false"
+        android:progressDrawable="@drawable/icon_sect_seekbar"
+        android:thumb="@drawable/icon_bar3"
+        android:thumbOffset="6dp"
+
+        />
+    <!--android:splitTrack="false"-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="34dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <TextView
+            android:text="当前的宗门经验值"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"/>
+
+        <TextView
+            android:id="@+id/sect_updata_experience"
+            android:text="00/00"
+            android:gravity="center"
+            android:textColor="#f66f51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="11sp"/>
+
+        <!--<TextView-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:text="攻击/防御题数"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#fff"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="11sp"/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/sect_fight_num"-->
+            <!--android:text="00/000"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#f66f51"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textSize="11sp"/>-->
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/list_view_background">
+
+    <LinearLayout
+        android:id="@+id/ll_reply_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@color/comment_reply_bottom_view_bg_fc">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.3dp"
+            android:background="@color/divider_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_not_reply_to_host"
+            android:visibility="gone"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:paddingLeft="@dimen/reply_bottom_margin"
+            android:paddingRight="@dimen/reply_bottom_margin"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="6dp"
+                android:textColor="@color/poster_title_text_color"
+                android:textSize="@dimen/text_size_user_name"
+                android:text="@string/comment_reply" />
+            <TextView
+                android:id="@+id/tv_reply_to_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/base_color_blue"
+                android:textSize="@dimen/text_size_small"
+                android:text="XXX回复XXX" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/reply_bottom_margin"
+            android:paddingRight="@dimen/reply_bottom_margin" >
+
+            <EditText
+                android:id="@+id/et_comment_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/btn_send"
+                android:layout_alignParentLeft="true"
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:maxLines="4"
+                android:hint="@string/comment_reply_hint"
+                android:textColorHint="@color/button_text_a5"
+                android:textColor="@color/poster_title_text_color"
+                android:textSize="@dimen/text_size_normal"
+                android:background="@null"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <Button
+                android:id="@id/btn_send"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="@dimen/reply_button_width"
+                android:layout_height="@dimen/reply_button_height"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="5dp"
+                android:layout_alignBottom="@id/et_comment_reply"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/play_directly_enable_true_bg"
+                android:text="@string/comment_reply"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/button_text_size" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_reply_view" >
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:listSelector="@android:color/transparent"
+            android:cacheColorHint="@color/transparent"
+            android:scrollbars="none"
+            android:id="@+id/lv_comments_replies"/>
+    </RelativeLayout>
+
+</RelativeLayout>

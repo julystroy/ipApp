@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/stretch_bg" />
+
+    <com.cartoon.module.changxian.detail.detailinfo.RatingView
+        android:id="@+id/rating_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/tv_evaluate_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="8dp"
+        android:textColor="@color/subtitle_text_color"
+        android:textSize="@dimen/text_size_medium_small" />
+
+    <View
+        android:id="@+id/v_separator"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/grid_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_evaluate_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55.7dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp">
+
+            <com.cartoon.view.RoundImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/user_avatar_medium"
+                android:layout_height="@dimen/user_avatar_medium"/>
+
+            <ImageView
+                android:id="@+id/iv_vip_logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="2dp"
+                android:layout_alignRight="@id/imageView"
+                android:layout_alignBottom="@id/imageView"
+                android:src="@drawable/vip_logo_comment" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_evaluate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="23dp"
+                android:text="@string/evaluate_title"
+                android:textColor="@color/subtitle_text_color"
+                android:textSize="@dimen/text_size_medium_small" />
+
+            <com.cartoon.view.MaterialRatingBar
+                android:id="@+id/self_evaluate_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="55dp"
+                android:layout_marginTop="11dp"
+                android:isIndicator="true"
+                android:maxHeight="18.7dp"
+                android:minHeight="18.7dp"
+                android:numStars="5" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/stretch_bg"
+        android:orientation="horizontal" />
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/title_layout"/>
+    <FrameLayout
+        android:id="@+id/fl_sect_build"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <cndroid.com.smoothendlesslibrary.EndLessRecyclerView
+            android:id="@+id/recycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="false"
+            android:layout_marginBottom="45dp"
+            android:scrollbars="none"/>
+
+        <TextView
+            android:id="@+id/tv_build_sect"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:text="创建宗门"
+            android:textColor="@color/orrange"
+            android:textSize="15.4sp"
+            android:background="@drawable/fang_background"
+            android:layout_margin="11.3dp"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:layout_height="43.3dp"/>
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/fl_sect_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+        <!-- 底层菜单 -->
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/color_line_bg" />
+
+            <RadioGroup
+                android:id="@+id/tab_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/color_white"
+                android:paddingBottom="@dimen/tab_padding_bottom"
+                android:paddingTop="@dimen/tab_padding_top">
+
+                <RadioButton
+                    android:id="@+id/sect_mine"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/tab_item_drawable_padding"
+                    android:drawableTop="@drawable/sect_mine"
+                    android:gravity="center_horizontal"
+                    android:text="@string/mine_sect"
+                    android:textColor="@color/tab_text_color"
+                    android:textSize="@dimen/font_tab_size" />
+                <RadioButton
+                    android:id="@+id/sect_task"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/tab_item_drawable_padding"
+                    android:drawableTop="@drawable/sect_task"
+                    android:gravity="center_horizontal"
+                    android:text="@string/sect_task"
+                    android:textColor="@color/tab_text_color"
+                    android:textSize="@dimen/font_tab_size" />
+                <RadioButton
+                    android:id="@+id/sect_fight"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="@dimen/tab_item_drawable_padding"
+                    android:drawableTop="@drawable/sect_fight"
+                    android:gravity="center_horizontal"
+                    android:text="@string/sect_fight"
+                    android:textColor="@color/tab_text_color"
+                    android:textSize="@dimen/font_tab_size" />
+                <RelativeLayout
+                    android:id="@+id/rl_event"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+
+                    <RadioButton
+                        android:id="@+id/sect_event"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:button="@null"
+                        android:drawablePadding="@dimen/tab_item_drawable_padding"
+                        android:drawableTop="@drawable/sect_event"
+                        android:gravity="center_horizontal"
+                        android:text="@string/sect_event"
+                        android:textColor="@color/tab_text_color"
+                        android:visibility="visible"
+                        android:textSize="@dimen/font_tab_size" />
+
+                    <ImageView
+                        android:id="@+id/iv_new_message"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:paddingLeft="20dp"
+                        android:src="@mipmap/icon_new_message"
+                        android:visibility="gone" />
+                </RelativeLayout>
+            </RadioGroup>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_gravity="bottom|right"
+            android:layout_width="60dp"
+            android:layout_marginRight="13.3dp"
+            android:layout_marginBottom="70dp"
+            android:layout_height="60dp">
+
+            <ImageView
+                android:id="@+id/chat"
+                android:layout_centerInParent="true"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/icon_chat"/>
+            <TextView
+                android:id="@+id/chat_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="99+"
+                android:gravity="center"
+                android:textSize="11sp"
+                android:textColor="#fff"
+                android:background="@drawable/red_bg"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

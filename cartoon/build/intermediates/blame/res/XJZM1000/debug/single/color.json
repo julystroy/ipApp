@@ -1,0 +1,134 @@
+[
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/abc_tint_default.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/comment_like_color.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/res/color/comment_like_color.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/base_blue_button_color.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/res/color/base_blue_button_color.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/white_gray_text_color.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/res/color/white_gray_text_color.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/switch_thumb_material_light.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/active_back_color.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/res/color/active_back_color.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/abc_tint_spinner.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/comment_text_color.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/res/color/comment_text_color.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/abc_tint_switch_thumb.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_tint_switch_thumb.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/abc_tint_edittext.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/blue_gray_text_color.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/res/color/blue_gray_text_color.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/active_text_color.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/res/color/active_text_color.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/switch_thumb_material_dark.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/send_button_color.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/res/color/send_button_color.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/color_listener_down_title.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/res/color/color_listener_down_title.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/abc_primary_text_material_light.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/detail_tab_text_color.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/res/color/detail_tab_text_color.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/vpi__light_theme.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/XJZM_Cartoon_Merged/ViewPagerIndicator/unspecified/res/color/vpi__light_theme.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/abc_tint_switch_track.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/tab_title_color.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/res/color/tab_title_color.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/tab_text_color.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/res/color/tab_text_color.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/vpi__dark_theme.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/XJZM_Cartoon_Merged/ViewPagerIndicator/unspecified/res/color/vpi__dark_theme.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/abc_search_url_text.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.0.0/res/color/abc_secondary_text_material_light.xml"
+    }
+]

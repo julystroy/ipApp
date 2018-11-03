@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <com.cartoon.view.ComicViewPager
+        android:id="@+id/vp_comic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/reader_title_bar_height"
+            android:background="@color/darkest_semitransparent"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/title_padding_right"
+            android:paddingStart="@dimen/title_padding_left">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:drawablePadding="@dimen/item_drawable_padding"
+                android:drawableStart="@mipmap/icon_back"
+                android:gravity="center_vertical"
+                android:text="第一话"
+                android:textColor="@color/color_title_font_comic"
+                android:textSize="@dimen/font_title_size" />
+
+            <ImageButton
+                android:id="@+id/iv_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center_vertical"
+                android:background="@null"
+                android:src="@drawable/icon_reader_share" />
+        </LinearLayout>
+
+        <include layout="@layout/layout_reader_bottom" />
+
+
+        <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar_reader"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/px140"-->
+        <!--android:background="@color/darkest_semitransparent"-->
+        <!--app:theme="@style/MyDarkToolbarTheme" />-->
+
+    </RelativeLayout>
+
+</FrameLayout>

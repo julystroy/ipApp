@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_colect_bangai"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:gravity="center_vertical"
+              android:background="@drawable/icon_cartoon_down_bg"
+              android:layout_height="wrap_content"
+    android:layout_marginRight="12dp"
+    android:layout_marginTop="3.3dp"
+    android:layout_marginBottom="3.3dp">
+
+<ImageView
+    android:id="@+id/iv_point"
+    android:layout_width="12dp"
+    android:layout_height="wrap_content"
+    android:src="@drawable/icon_point_selector"
+    android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/tv_collect_bang"
+        android:layout_marginLeft="8.7dp"
+        android:background="@drawable/bonus_background"
+        android:paddingBottom="14dp"
+        android:paddingTop="14dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="第一章：猴头出世"
+        android:textSize="13.3sp"
+        android:textColor="#1b1b1b"
+        android:drawableRight="@drawable/icon_right_selector"
+        android:paddingRight="10dp"
+       />
+</LinearLayout>

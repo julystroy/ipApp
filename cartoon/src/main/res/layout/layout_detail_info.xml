@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.cartoon.module.changxian.detail.detailinfo.SlideView
+        android:id="@+id/slide_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/layout_recommender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_recommender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:textColor="@color/color_title_font"
+            android:textSize="@dimen/text_size_medium_small"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/quotes_up" />
+
+        <TextView
+            android:id="@+id/tv_recommend_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/editor_recommend_text"
+            android:textSize="@dimen/editor_recommend_text"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:src="@drawable/quotes_down" />
+    </LinearLayout>
+
+    <com.cartoon.view.StretchyTextView
+        android:id="@+id/spread_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/stretch_bg" />
+
+    <com.cartoon.module.changxian.detail.detailinfo.DetailFeaturesItem
+        android:id="@+id/item_features"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp" />
+
+    <View
+        android:id="@+id/v_separator"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/group_gap"
+        android:background="@color/list_view_background" />
+
+    <com.cartoon.module.changxian.comment.CommentsHeaderItem
+        android:id="@+id/comment_header_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/list_view_item_padding_vertical"
+        android:paddingRight="@dimen/list_view_item_padding_vertical"
+        android:paddingTop="13dp"
+        android:textColor="@color/subtitle_text_color"
+        android:textSize="@dimen/text_size_medium_small" />
+
+</LinearLayout>

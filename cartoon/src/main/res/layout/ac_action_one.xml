@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/ll_nesbase"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+                    android:id="@+id/rl_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/title_bar_height"
+                    android:background="@color/color_title_bg">
+
+        <ImageButton
+            android:id="@+id/bt_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:paddingEnd="@dimen/title_padding_right"
+            android:paddingStart="@dimen/title_padding_left"
+            android:src="@drawable/animal_play" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/color_title_font"
+            android:textSize="@dimen/font_title_size"
+            android:visibility="visible"/>
+        <com.cartoon.view.indicator.MagicIndicator
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+        <ImageButton
+            android:id="@+id/bt_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:padding="@dimen/title_button_padding"
+            android:paddingEnd="@dimen/title_padding_right"
+            android:paddingStart="@dimen/title_padding_left"
+            android:src="@mipmap/icon_edit" />
+
+
+        <include
+            layout="@layout/part_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="48dp"
+            android:background="@android:color/transparent"
+            />
+
+        <com.cartoon.view.GradientLinearLayout
+            xmlns:gl="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ll_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            gl:start_color="@color/color_back_tran"
+            gl:end_color="@color/color_back_tranend"
+            gl:orientation="BOTTOM_TOP"
+            android:orientation="vertical">
+
+            <com.cartoon.view.NoTouchView
+                android:layout_gravity="bottom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                 />
+
+            <RadioGroup
+                android:id="@+id/tab_bar"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="43.3dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginBottom="9.3dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/action_ruler"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="规则"
+                    android:background="@drawable/background_select"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/active_text_color"
+                    android:textSize="20sp"  />
+
+
+
+                    <RadioButton
+                        android:id="@+id/action_rank"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:text="排行"
+                        android:background="@drawable/background_select"
+                        android:layout_marginLeft="8.7dp"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/active_text_color"
+                        android:textSize="20sp" />
+
+            </RadioGroup>
+        </com.cartoon.view.GradientLinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_show"
+            android:src="@mipmap/icon_join"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="70dp"
+            android:layout_marginRight="30dp"/>
+
+    </FrameLayout>
+</LinearLayout>

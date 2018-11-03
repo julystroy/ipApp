@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="268.7dp"
+              android:layout_height="133.3dp"
+    android:background="@drawable/black_background_tran">
+
+    <TextView
+        android:id="@+id/tv_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="恭喜"
+        android:textColor="#fff"
+        android:paddingTop="43dp"
+        android:paddingBottom="46dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:textSize="15.4sp"
+        android:gravity="center"/>
+
+</LinearLayout>

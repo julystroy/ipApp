@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_bar_height"
+        android:background="@color/color_bg"
+        android:paddingEnd="@dimen/title_padding_right"
+        android:paddingStart="@dimen/title_padding_left">
+
+        <TextView
+            android:id="@+id/tv_desc"
+            style="@style/home_menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_desc" />
+
+        <TextView
+            android:id="@+id/tv_sort"
+            style="@style/home_menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:drawableStart="@mipmap/icon_sort"
+            android:text="@string/menu_sort" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/part_line" />
+
+    <cndroid.com.smoothendlesslibrary.EndLessRecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/line1"
+            layout="@layout/part_line" />
+
+        <TextView
+            android:id="@+id/tv_store"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_below="@+id/line1"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/item_padding"
+            android:paddingStart="@dimen/item_padding"
+            android:textColor="#424242"
+            android:textSize="13sp" />
+
+        <include
+            android:id="@+id/line2"
+            layout="@layout/part_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_bar_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingEnd="@dimen/item_padding"
+            android:paddingStart="@dimen/item_padding">
+
+            <CheckBox
+                android:id="@+id/rb_all"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="全选"
+                android:textColor="#424242"
+                android:textSize="15sp" />
+
+            <include layout="@layout/part_line_vertical" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/bt_download"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/item_drawable_padding"
+                    android:drawableStart="@mipmap/icon_down"
+                    android:text="开始下载"
+                    android:textColor="#424242"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

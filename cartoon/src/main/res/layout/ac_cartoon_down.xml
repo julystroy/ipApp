@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_bar_height"
+        android:background="@color/color_bg"
+        android:paddingEnd="@dimen/title_padding_right"
+        android:paddingStart="@dimen/title_padding_left">
+
+        <TextView
+            android:id="@+id/tv_desc"
+            style="@style/home_menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_desc" />
+
+        <TextView
+            android:id="@+id/tv_sort"
+            style="@style/home_menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:drawableStart="@mipmap/icon_sort"
+            android:text="@string/menu_sort" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAFAFA"
+        android:orientation="vertical">
+
+        <cndroid.com.smoothendlesslibrary.EndLessRecyclerView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="vertical" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/color_line_bg" />
+
+            <TextView
+                android:id="@+id/tv_store"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_below="@+id/line1"
+                android:gravity="center_vertical"
+                android:paddingEnd="@dimen/item_padding"
+                android:paddingStart="@dimen/item_padding"
+                android:textColor="#424242"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/line_height"
+                android:layout_below="@+id/tv_store"
+                android:background="@color/color_line_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_bar_height"
+                android:layout_below="@+id/line2"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingEnd="@dimen/item_padding"
+                android:paddingStart="@dimen/item_padding">
+
+                <CheckBox
+                    android:id="@+id/rb_all"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="全选"
+                    android:textColor="#424242"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="@dimen/line_height"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="#eaeaea" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/bt_download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="@dimen/item_drawable_padding"
+                        android:drawableStart="@mipmap/icon_down"
+                        android:text="开始下载"
+                        android:textColor="#424242"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

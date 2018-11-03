@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/mipmap-xxxhdpi-v4/ic_launcher.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/mipmap-xxxhdpi-v4/icon_stick.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/res/mipmap-xxxhdpi/icon_stick.png"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/mipmap-xxxhdpi-v4/question_wrong.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/res/mipmap-xxxhdpi/question_wrong.png"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/mipmap-xxxhdpi-v4/question_right.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/src/main/res/mipmap-xxxhdpi/question_right.png"
+    }
+]

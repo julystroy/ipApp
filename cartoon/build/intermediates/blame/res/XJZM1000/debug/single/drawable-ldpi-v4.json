@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/drawable-ldpi-v4/ic_play_next.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/generated/res/pngs/XJZM1000/debug/drawable-ldpi/ic_play_next.png"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/drawable-ldpi-v4/md_nav_back.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.5.9/res/drawable-ldpi-v4/md_nav_back.png"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/drawable-ldpi-v4/ic_remote_view_pause.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/generated/res/pngs/XJZM1000/debug/drawable-ldpi/ic_remote_view_pause.png"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/drawable-ldpi-v4/ic_remote_view_play_last.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/generated/res/pngs/XJZM1000/debug/drawable-ldpi/ic_remote_view_play_last.png"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/drawable-ldpi-v4/ic_play_last.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/generated/res/pngs/XJZM1000/debug/drawable-ldpi/ic_play_last.png"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/drawable-ldpi-v4/ic_remote_view_play_next.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/generated/res/pngs/XJZM1000/debug/drawable-ldpi/ic_remote_view_play_next.png"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/drawable-ldpi-v4/ic_remote_view_play.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/generated/res/pngs/XJZM1000/debug/drawable-ldpi/ic_remote_view_play.png"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/drawable-ldpi-v4/ic_remote_view_close.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/generated/res/pngs/XJZM1000/debug/drawable-ldpi/ic_remote_view_close.png"
+    },
+    {
+        "merged": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/intermediates/res/merged/XJZM1000/debug/drawable-ldpi-v4/ic_bookmark_24dp.png",
+        "source": "/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon/build/generated/res/pngs/XJZM1000/debug/drawable-ldpi/ic_bookmark_24dp.png"
+    }
+]

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="@color/base_color_blue" android:state_enabled="true"></item>
+    <item android:color="@color/evaluate_rating_text" android:state_enabled="false"></item>
+    <item android:color="@color/evaluate_rating_text"></item>
+
+</selector>

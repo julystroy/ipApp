@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:id="@+id/ll_buy_card"
+              android:layout_width="wrap_content"
+              android:layout_height="183dp"
+              >
+
+    <ImageView
+        android:id="@+id/iv_experience_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:id="@+id/tv_markets_desc"
+        android:gravity="center"
+        android:layout_marginTop="34dp"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#f8ea87"
+        android:text="【三日内经验翻倍】"
+        android:visibility="visible"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_rest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="34dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvone"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="#f8ea87"
+            android:text="【"
+            />
+        <com.cartoon.utils.countdown.CountdownView
+            android:id="@+id/cv_countdownView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2.5dp"
+            app:isShowDay="true"
+            app:isShowHour="true"
+            app:isShowMinute="true"
+            app:isShowSecond="true"
+            app:isTimeTextBold="true"
+            app:suffixDay="天"
+            app:suffixGravity="bottom"
+            app:suffixHour=":"
+            app:suffixMinute=":"
+            app:suffixTextColor="#f8ea87"
+            app:suffixTextSize="8sp"
+            app:timeTextColor="#f8ea87"
+            app:timeTextSize="9.3sp"
+            />
+        <TextView
+            android:id="@+id/tvtwo"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:textColor="#f8ea87"
+            android:text="】"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_pay_stone_count"
+        android:layout_width="69dp"
+        android:layout_height="22dp"
+        android:text="灵石20"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:textColor="#3a1e07"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/card_bt_bgyellow"/>
+
+
+</RelativeLayout>

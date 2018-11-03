@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:clipToPadding="true"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/color_title_bg">
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:paddingEnd="@dimen/title_padding_right"
+            android:paddingStart="@dimen/title_padding_left"
+            android:gravity="center"
+            android:text="共多少" />
+
+
+
+        <TextView
+            android:id="@+id/tv_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="排序"
+            android:gravity="center"
+            android:padding="@dimen/title_button_padding"
+            android:paddingEnd="@dimen/title_padding_right"
+            android:paddingStart="@dimen/title_padding_left"
+             />
+
+
+        <include
+            layout="@layout/part_line"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <cndroid.com.smoothendlesslibrary.EndLessRecyclerView
+            android:id="@+id/collect_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_content_bg"
+            android:scrollbars="none"
+            />
+    </FrameLayout>>
+
+</LinearLayout>

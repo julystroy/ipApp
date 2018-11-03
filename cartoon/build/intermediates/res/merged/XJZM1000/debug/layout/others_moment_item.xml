@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FBFBFB"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="@dimen/title_padding_left"
+        android:paddingRight="@dimen/title_padding_left"
+        android:paddingTop="@dimen/title_padding_left">
+
+        <com.cartoon.view.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="6dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_head"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:id="@+id/ll_useinfo_show"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="#464646"
+                android:textSize="14sp"
+                tools:text="nickname" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_bonus"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/ll_useinfo_show"
+            android:layout_height="wrap_content"
+            android:textColor="#545353"
+            android:textSize="9.3sp"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="3.5dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:paddingRight="3.5dp"
+            android:background="@drawable/bonus_background"
+            tools:text="等级" />
+        <TextView
+            android:id="@+id/tv_special_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#545353"
+            android:textSize="9.3sp"
+            android:layout_below="@+id/ll_useinfo_show"
+            android:layout_toRightOf="@+id/tv_bonus"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="3.5dp"
+            android:paddingTop="1dp"
+            android:paddingBottom="1dp"
+            android:paddingRight="3.5dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/bonus_background"
+            android:visibility="visible"
+            tools:text="称号"
+            />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="#a6a6a6"
+            android:layout_marginRight="10dp"
+            android:paddingTop="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"
+            tools:text="2016" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_avatar"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:orientation="vertical"
+            android:paddingTop="2dp">
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="3dp"
+                android:ellipsize="end"
+                android:maxLines="5"
+                android:textColor="#2f2f2f"
+                android:textSize="17sp"
+                tools:text="白色的风车 安静的转着 真实的感觉 梦境般遥远 甜甜的海水 复杂的眼泪看你傻笑着 握住我的手" />
+
+            <com.cartoon.view.ExpandGridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:scrollbars="none"
+                android:visibility="gone"
+                tools:listitem="@layout/book_friend_moment_grid_item" />
+
+            <com.cartoon.view.SelectableImageView
+                android:id="@+id/iv_cover"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/default_photo"
+                android:visibility="gone"
+                app:pi_selectable="true"
+                app:pi_selectedColor="#88000000" />
+
+            <include layout="@layout/part_cartoon_or_listener_item" />
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:background="#e5e5e5"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/tv_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_cartoon_bigfocus"
+            android:layout_below="@+id/ll_container"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:background="?attr/selectableItemBackground"
+            android:drawablePadding="6dp"
+            android:gravity="bottom"
+            android:paddingBottom="8dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="3dp"
+            android:paddingTop="4dp"
+            android:text="4"
+            android:textColor="#ef5f11"
+            android:textSize="14.5sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_container"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_like"
+            android:background="?attr/selectableItemBackground"
+            android:drawablePadding="4dp"
+            android:gravity="bottom"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="3dp"
+            android:paddingTop="7dp"
+            android:text="4"
+            android:textColor="#929292"
+            android:drawableLeft="@mipmap/icon_cartoon_message_p"/>
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/ll_container"
+            android:autoLink="all"
+            android:gravity="center_vertical"
+            android:paddingBottom="4dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="12dp"
+            android:text="@string/delete_with_underline"
+            android:textSize="14.2sp"
+
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#f2f2f2" />
+
+
+</LinearLayout>

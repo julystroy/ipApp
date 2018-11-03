@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/ll_expound"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="5dp"
+              android:layout_marginLeft="5dp"
+              android:layout_marginBottom="9.7dp"
+              android:background="@color/color_bg"
+              android:foreground="?attr/selectableItemBackground"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/icon_cover"
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:scaleType="center"
+            android:src="@mipmap/icon_cartoon_cover"/>
+
+        <TextView
+            android:id="@+id/tv_create_time"
+            android:layout_width="wrap_content"
+            android:layout_height="19.3dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="9.3dp"
+            android:layout_marginRight="9.3dp"
+            android:background="@drawable/cartoon_time_bg"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#FFF"
+            android:textSize="10.6sp"
+            tools:text="2016"/>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tab_color_white"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/item_padding"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/color_expound_item_title"
+            android:textSize="@dimen/font_title_size"
+            tools:text="123"/>
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:ellipsize="end"
+            android:foreground="?attr/selectableItemBackground"
+            android:lineSpacingMultiplier="1.2"
+            android:maxLines="3"
+            android:textColor="#bababa"
+            android:textSize="14sp"
+            android:visibility="gone"
+            tools:text="123123"/>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_height"
+        android:layout_marginLeft="@dimen/title_padding_right"
+        android:layout_marginRight="@dimen/title_padding_left"
+        android:background="@color/color_line_bg"/>
+
+    <include layout="@layout/mutual_layout"/>
+
+   <!-- <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@color/color_bg"
+        />-->
+</LinearLayout>

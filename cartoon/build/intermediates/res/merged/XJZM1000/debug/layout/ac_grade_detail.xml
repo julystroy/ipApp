@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+
+    <include layout="@layout/title_back_public"/>
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:paddingBottom="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/color_white"
+        android:gravity="center"
+        >
+        <ImageView
+            android:id="@+id/iv_mine_user_icon"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_user_default"/>
+        <TextView
+            android:id="@+id/tv_mine_user_bonuspoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加载中..."
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="4.7dp"
+            android:paddingTop="2.7dp"
+            android:paddingBottom="2.7dp"
+            android:paddingRight="4.7dp"
+            android:background="@drawable/bonus_background"
+            android:textSize="10sp"
+           android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"/>
+
+        <TextView
+            android:id="@+id/tv_bonus_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00/000"
+            android:layout_marginBottom="20dp"
+            />
+
+
+        <com.cartoon.utils.MySeekBar
+            android:id="@+id/sb_bonus_point"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:splitTrack="false"
+            android:progressDrawable="@drawable/icon_myseek_bar"
+            android:thumb="@drawable/icon_bar2"
+
+            tools:targetApi="lollipop_mr1"
+            />
+    </LinearLayout>
+    <include
+        layout="@layout/part_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        />
+    <include
+        android:layout_marginTop="10dp"
+        layout="@layout/part_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <WebView
+        android:id="@+id/webview_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></WebView>
+</LinearLayout>
+</android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

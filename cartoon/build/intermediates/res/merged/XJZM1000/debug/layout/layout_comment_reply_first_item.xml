@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/list_view_background" />
+
+    <RelativeLayout
+        android:id="@+id/rlayout_comment_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/reply_bottom_margin">
+
+        <ImageView
+            android:id="@+id/iv_green_bar"
+            android:layout_width="@dimen/blue_line_width"
+            android:layout_height="@dimen/blue_line_height"
+            android:layout_marginLeft="@dimen/list_view_item_padding_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@color/subtitle_text_green" />
+
+        <TextView
+            android:id="@+id/tv_comment_reply_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/title_margin_to_blue_line"
+            android:layout_toRightOf="@id/iv_green_bar"
+            android:text="@string/comment_replies_title"
+            android:textColor="@color/subtitle_text_color"
+            android:textSize="@dimen/title_after_blue_line" />
+
+        <TextView
+            android:id="@+id/tv_comment_replies_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="(0)"
+            android:layout_toRightOf="@id/tv_comment_reply_title"
+            android:textColor="@color/subtitle_text_color"
+            android:textSize="10sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cartoon.view.VDHLayoutLite android:id="@+id/vdh_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+    <!--android:background="@color/transparent" 不设置btn_logo1滑动会消失，还在研究下 -->
+
+    <TextView
+        android:id="@+id/btn_logo_float"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/circle_quit_bg"
+        android:gravity="center"
+        android:text="退出"
+        android:textColor="@color/base_color_blue"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+</com.cartoon.view.VDHLayoutLite>

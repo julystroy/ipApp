@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/title_back_public"/>
+    <include layout="@layout/part_summary" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical">
+
+                <cndroid.com.smoothendlesslibrary.EndLessRecyclerView
+                    android:id="@+id/recycle_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/ll_comment"
+                    android:scrollbars="none" />
+
+            </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/color_line_bg" />
+        <LinearLayout
+            android:id="@+id/ll_comment"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/color_bg"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/title_padding_right"
+            android:paddingStart="@dimen/title_padding_left"
+            android:layout_alignParentBottom="true"
+            android:weightSum="5">
+
+
+            <EditText
+                android:id="@+id/et_input"
+                android:layout_width="0dp"
+                android:layout_height="33.3dp"
+                android:layout_weight="4"
+                android:background="@mipmap/icon_input_bg"
+                android:gravity="center_vertical"
+                android:hint="说点什么..."
+                android:paddingStart="5dp"
+                android:textColor="#2f2f2f"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/send_bt"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="33.3dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+
+                android:background="@drawable/corners_bg"
+                android:text="发送"
+                 />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

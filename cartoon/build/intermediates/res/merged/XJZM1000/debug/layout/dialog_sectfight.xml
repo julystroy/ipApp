@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_gravity="center"
+              android:layout_width="315dp"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:background="@mipmap/icon_fight">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="21dp"
+    android:layout_gravity="center_horizontal"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tv_sectname"
+        android:text="仙界"
+        android:textSize="18sp"
+        android:textColor="#2a2b2e"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tv_sect_level"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:text="LV1"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:textColor="#c94e4e"
+        android:textStyle="bold"
+        android:background="@drawable/yellow_background"
+        />
+
+
+</LinearLayout>
+
+
+    <TextView
+        android:layout_marginTop="90dp"
+        android:text="防御题数:"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/tv_fight_num"
+        android:layout_marginTop="3dp"
+        android:text="000/0000"
+        android:gravity="center"
+        android:textColor="#333333"
+        android:textSize="19sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_sect_number"
+        android:layout_marginTop="72dp"
+        android:text="成员人数：00/000"
+        android:gravity="center"
+        android:textColor="#282828"
+        android:textSize="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <TextView
+        android:id="@+id/tv_fight"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="211dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/selector_background_redg"
+        android:text="不可攻击"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@color/color_white"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="21dp"
+        android:text="（发起攻击时间为6:00-22:00）"
+        android:gravity="center"
+        android:textColor="#282828"
+        android:textSize="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</LinearLayout>

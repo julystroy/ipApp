@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_mymessage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FBFBFB"
+    android:foreground="?attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp">
+
+        <com.cartoon.view.CircleImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginRight="6dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/icon_head"/>
+
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:textColor="#464646"
+            android:textSize="12sp"
+            tools:text="nickname" />
+        <TextView
+            android:id="@+id/tv_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:layout_below="@+id/tv_nickname"
+            android:textColor="#fff"
+            android:textSize="9sp"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:background="@drawable/background_full_orrange"
+            tools:text="等级" />
+        <TextView
+            android:id="@+id/tv_special_name"
+            android:layout_toRightOf="@+id/tv_bonus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:textSize="9sp"
+            android:layout_below="@+id/tv_nickname"
+            android:layout_marginLeft="5dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:visibility="visible"
+            android:background="@drawable/background_full_yellow"
+            tools:text="称号"
+           />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_avatar"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:layout_below="@+id/tv_bonus"
+            android:textColor="#a6a6a6"
+            android:textSize="10sp"
+            tools:text="2016" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:autoLink="all"
+            android:padding="4dp"
+            android:text="@string/delete_with_underline"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/iv_approve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_avatar"
+            android:visibility="gone"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:textColor="#2f2f2f"
+            android:text="赞了你" />
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_avatar"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/fl_momment"
+            android:layout_toRightOf="@+id/iv_avatar"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:textColor="#2f2f2f"
+            tools:text="白色的风车 安静的转着 真实的感觉 梦境般遥远 甜甜的海水 复杂的眼泪看你傻笑着 握住我的手" />
+
+
+        <FrameLayout
+            android:id="@+id/fl_momment"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+            <TextView
+                android:id="@+id/tv_my_moment"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:visibility="gone"
+                tools:text="hahahahahhahahafasdhfadsfjasdflj"
+                android:textColor="#8c8c8c" />
+
+            <ImageView
+                android:id="@+id/iv_my_cover"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                />
+        </FrameLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="#f2f2f2" />
+
+
+</LinearLayout>

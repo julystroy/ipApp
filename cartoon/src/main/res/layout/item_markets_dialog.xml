@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/ll_buy_card"
+              android:layout_width="211dp"
+              android:layout_height="329dp"
+              >
+    <ImageView
+        android:id="@+id/iv_experience_card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        />
+
+
+        <TextView
+            android:id="@+id/tv_markets_count"
+            android:layout_above="@+id/tv_markets_desc"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="12dp"
+            android:layout_height="wrap_content"
+            android:text="【灵石45】"
+            android:textColor="#f8ea87"
+            android:textSize="15sp"
+            android:visibility="visible"
+            />
+        <TextView
+            android:id="@+id/tv_markets_desc"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/tv_pay_stone_count"
+            android:layout_width="200dp"
+            android:layout_marginBottom="19dp"
+            android:layout_height="wrap_content"
+            android:textColor="#f8ea87"
+            android:textSize="11sp"
+            android:text="使用后可以限定时间内经验翻倍"
+            android:visibility="visible"
+            />
+
+
+    <TextView
+        android:id="@+id/tv_pay_stone_count"
+        android:layout_width="107dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="35dp"
+        android:text="购买"
+        android:textColor="#3a1e07"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/card_bt_bgyellow"/>
+
+
+</RelativeLayout>

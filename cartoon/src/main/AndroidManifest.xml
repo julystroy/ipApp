@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="cn.com.xuanjiezhimen">
+
+    <permission
+        android:name="cn.com.xuanjiezhimen.permission.JPUSH_MESSAGE"
+        android:protectionLevel="signature"/>
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true"/>
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="cn.com.xuanjiezhimen.permission.JPUSH_MESSAGE"/>
+    <uses-permission android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+    <uses-permission android:name="cn.jpush.im.android.action.IM_RESPONSE"/>
+    <uses-permission android:name="cn.jpush.android.intent.CONNECTION"/>
+    <uses-permission android:name="cn.jpush.android.intent.TAG_ALIAS_TIMEOUT"/>
+
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.MOUNT_FORMAT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/><!--华为权限报错添加-->
+    <permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <!--ar-->
+    <uses-feature android:glEsVersion="0x00020000"/>
+    <supports-gl-texture android:name="GL_KHR_texture_compression_astc_ldr"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false"/>
+
+
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.touchscreen.multitouch.distinct"
+        android:required="false"/>
+    <!--ar-->
+    <application
+        android:name="com.cartoon.CartoonApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.cartoon.module.splash.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme_Full_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <!--android:launchMode="singleTask"-->
+        <activity
+            android:name="com.cartoon.module.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <!--"-->
+        <activity
+            android:name="com.cartoon.module.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+
+                <action android:name="android.intent.action.VIEW"/>
+
+                <data
+                    android:host="mopian.tv"
+                    android:pathPrefix="/pursue"
+                    android:scheme="xjzmapp"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.cartoon.module.tab.ar.ARActivity"
+                  android:process=":ARActivity"
+                  android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+                  android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection"
+                  android:launchMode="singleTask"
+                  android:permission="android.permission.ACCESS_WIFI_STATE"
+                  android:screenOrientation="portrait"/>
+        <activity android:name="com.mob.tools.MobUIShell"
+                  android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.cartoon.module.cartoon.CartoonCommentActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.cartoon.module.cartoon.CartoonCommentDetailActivity"/>
+        <activity android:name="com.cartoon.module.cartoon.CartoonBookDetailActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name="com.cartoon.common.AddCommentActivity"
+                  android:screenOrientation="portrait"/>
+       <!-- <activity
+            android:name="com.cartoon.module.listener.ListenerDetailActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize"/>-->
+        <activity android:name="com.cartoon.module.tab.mine.MyPackageActivity"
+                  android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
+        <activity android:name="com.cartoon.module.tab.mine.ChartsActivity"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"/>
+        <activity android:name="com.cartoon.module.markets.MarketsActivity"
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleTask"/>
+
+        <activity
+            android:name="com.cartoon.module.expound.JiNianDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.cartoon.module.bangai.BangaiDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name="com.cartoon.module.newmodules.NewBaseActivity"
+            android:screenOrientation="portrait"/>
+        <!--<activity
+            android:name="com.cartoon.module.mine.down.BangaiDownWebActivity"
+            android:screenOrientation="portrait"/>-->
+        <activity
+            android:name="com.cartoon.module.tab.mine.ProfileEditActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.cartoon.module.feedback.FeedbackActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.cartoon.module.mymessage.MyMessageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.cartoon.module.mytask.MyTaskActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.cartoon.module.mytask.GradeDetailActivity"
+            android:launchMode="singleTop"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.cartoon.module.mymoment.OthersMomentActivity"
+                  android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.cartoon.module.question.QuestionActivity"
+                  android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.cartoon.module.tab.bookfriendmoment.PreviewPhotoActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.cartoon.module.mymoment.MyMomentActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.cartoon.module.compose.ComposeActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.cartoon.module.compose.NoteActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.cartoon.module.action.ActionNoteActivity"
+                  android:windowSoftInputMode="adjustResize"
+                  android:screenOrientation="portrait"/>
+        <!--<activity
+            android:name="com.cartoon.module.mine.down.DownLoadActivity"
+            android:screenOrientation="portrait"/>-->
+        <activity
+            android:name="com.cartoon.module.login.LicenseActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.cartoon.module.splash.WebViewActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.cartoon.module.action.ActionOneActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name="com.cartoon.module.action.ActionDetailActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name="com.cartoon.module.zong.SectActivity"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"/>
+        <activity android:name="com.cartoon.module.tab.mine.SettingActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name="com.cartoon.module.zong.FightActivity"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"/>
+        <activity android:name="com.cartoon.module.bangai.NovelDetailActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name="com.cartoon.module.bangai.RecommendDetailActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name="com.cartoon.module.zong.SectChatActivity"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"/>
+
+        <activity android:name="com.cartoon.module.zong.FightInfoActivity"
+                  android:launchMode="singleTop"
+                  android:screenOrientation="portrait"/>
+        <!--<activity
+            android:name="com.cartoon.module.DialogActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Dialog"/>-->
+
+<!--dianyun-->
+        <activity
+            android:name="com.cartoon.module.game.MineGameActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.cartoon.module.game.history.MineGameHistoryActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.cartoon.module.game.history.GameHistoryPlayActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Toolbar"/>
+        <activity
+            android:name="com.cartoon.module.game.favor.GameFavorActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Toolbar"/>
+        <activity
+            android:name="com.cartoon.module.changxian.download.DownloadActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.cartoon.module.changxian.detail.DetailActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Toolbar"/>
+        <activity
+            android:name="com.cartoon.module.changxian.comment.reply.CommentReplyActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" />
+        <activity
+            android:name="com.cartoon.module.changxian.detail.comment.EditCommentActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="cn.idianyun.streaming.play.PreviewActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
+            android:screenOrientation="portrait" />
+
+
+        <meta-data
+            android:name="integrationId"
+            android:value="wandoujia"/>
+        <meta-data
+            android:name="qt_clientid"
+            android:value="NTIzZmE5YmEtMzA5Mi0xMWU2LTkyM2YtMDAxNjNlMDAyMGFk"/>
+        <meta-data
+            android:name="qt_client_secret"
+            android:value="OGQ3ZmIwZmItNzMxYi0zZGI4LWJmZWUtYjY0ZjI1YjkzN2Y2"/>
+
+
+
+
+        <!-- 极光推送 ************************************************************************************-->
+        <!-- Required SDK核心功能 -->
+
+        <!-- Rich push 核心功能 since 2.0.6-->
+        <activity
+            android:name="cn.jpush.android.ui.PopWinActivity"
+            android:theme="@style/MyDialogStyle"
+            android:exported="false">
+        </activity>
+
+        <activity
+            android:name="cn.jpush.android.ui.PushActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="false"
+            android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="cn.jpush.android.ui.PushActivity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="cn.com.xuanjiezhimen"/>
+            </intent-filter>
+        </activity>
+        <!-- Required  SDK核心功能 -->
+        <service
+            android:name="cn.jpush.android.service.DownloadService"
+            android:enabled="true"
+            android:exported="false"/>
+
+
+        <service android:name="com.cartoon.CartoonService"
+                 android:enabled="true"
+                 android:persistent="true"
+                 android:exported="true">
+            <intent-filter android:priority="1000" >
+                <action android:name="com.cartoon.CartoonService" />
+            </intent-filter>
+        </service>
+
+       <!-- <service android:name="com.cartoon.MyService"
+                 android:enabled="true"
+                 android:persistent="true"
+                 android:exported="true"/>
+-->
+        <!-- Required SDK 核心功能 -->
+        <!-- 可配置android:process参数将PushService放在其他进程中 -->
+        <service
+            android:name="cn.jpush.android.service.PushService"
+            android:enabled="true"
+            android:process=":multiprocess"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTER"/>
+                <action android:name="cn.jpush.android.intent.REPORT"/>
+                <action android:name="cn.jpush.android.intent.PushService"/>
+                <action android:name="cn.jpush.android.intent.PUSH_TIME"/>
+            </intent-filter>
+        </service>
+
+        <!-- since 1.8.0 option 可选项。用于同一设备中不同应用的JPush服务相互拉起的功能。 -->
+        <!-- 若不启用该功能可删除该组件，将不拉起其他应用也不能被其他应用拉起 -->
+        <service
+            android:name="cn.jpush.android.service.DaemonService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.DaemonService"/>
+
+                <category android:name="cn.com.xuanjiezhimen"/>
+            </intent-filter>
+        </service>
+
+        <!--
+           <receiver android:name="com.cartoon.utils.NetworkChangeReceiver">
+               <intent-filter>
+                   <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                   <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+               </intent-filter>
+           </receiver>
+        -->
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.PushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter android:priority="1000">
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED_PROXY"/>
+                <!-- Required  显示通知栏 -->
+                <category android:name="cn.com.xuanjiezhimen"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"/>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+            <!-- Optional -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Required SDK核心功能 -->
+        <receiver
+            android:name="cn.jpush.android.service.AlarmReceiver"
+            android:exported="false"/>
+
+        <!-- since 3.0.9 Required SDK 核心功能-->
+        <provider
+            android:authorities="cn.com.xuanjiezhimen.DataProvider"
+            android:name="cn.jpush.android.service.DataProvider"
+            android:exported="false"
+            />
+
+        <!-- User defined.  For test only  用户自定义的广播接收器 -->
+        <receiver
+            android:name="com.cartoon.CartoonReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION"/>
+                <!-- Required  用户注册SDK的intent -->
+                <action android:name="cn.jpush.android.intent.UNREGISTRATION"/>
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED"/>
+                <!-- Required  用户接收SDK消息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED"/>
+                <!-- Required  用户接收SDK通知栏信息的intent -->
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED"/>
+                <!-- Required  用户打开自定义通知栏的intent -->
+                <action android:name="cn.jpush.android.intent.ACTION_RICHPUSH_CALLBACK"/>
+                <!-- Optional 用户接受Rich Push Javascript 回调函数的intent -->
+                <action android:name="cn.jpush.android.intent.CONNECTION"/>
+                <!-- 接收网络变化 连接/断开 since 1.6.3 -->
+                <category android:name="cn.com.xuanjiezhimen"/>
+            </intent-filter>
+        </receiver>
+
+
+        <!-- Required  . Enable it you can get statistics data with channel -->
+        <meta-data
+            android:name="JPUSH_CHANNEL"
+            android:value="developer-default"/>
+        <meta-data
+            android:name="JPUSH_APPKEY"
+            android:value="60c95c706c28679ae77e9090"/>
+        <!-- </>值来自开发者平台取得的AppKey -->
+        <!-- 极光推送 ************************************************************************************-->
+
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+       <!-- <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>-->
+
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent1105682174" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize"/>
+
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="579e1bba67e58e37c1000f93" >
+        </meta-data>
+
+
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}"/>
+
+        <!-- 您从百度网站获取的APP KEY -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="cfe2000346"/>
+        <!-- 渠道商编号 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}"/>
+
+    </application>
+
+</manifest>

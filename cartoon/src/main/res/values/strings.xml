@@ -1,0 +1,246 @@
+<resources>
+    <string name="app_name">凡人仙界篇</string>
+
+    <string name="tab_home">首页</string>
+    <string name="tab_activity">凡人活动</string>
+    <string name="tab_book">饭粒说</string>
+    <string name="tab_mine">我的</string>
+    <string name="tab_xiu">修行</string>
+    <string name="tab_action">活动</string>
+
+    <string name="fg_cartoon">漫画</string>
+    <string name="fg_listener">玄门听书</string>
+    <string name="fg_expound">凡人纪年</string>
+    <string name="fg_read">仙界连载</string>
+    <string name="fg_trends">仙界动态</string>
+    <string name="fg_qman">凡人次元</string>
+    <string name="fg_bangai">玄门番外</string>
+    <string name="fg_staticfilm">静态电影</string>
+    <string name="menu_scrible">说明</string>
+    <string name="ac_login">登录</string>
+    <string name="fg_quicklistener">追听</string>
+
+    <string name="menu_share">分享</string>
+
+    <string name="btn_edit">编辑</string>
+    <string name="btn_complete">完成</string>
+
+    <string name="menu_desc">共125话</string>
+    <string name="menu_download">批量下载</string>
+    <string name="menu_anthology">目录</string>
+    <string name="menu_sort">排序</string>
+
+    <string name="sort_asc">正序</string>
+    <string name="sort_desc">倒序</string>
+
+    <string name="tv_latest">最热</string>
+    <string name="tv_news">最新</string>
+
+    <string name="switch_next_comic">已切换到最后一页</string>
+    <string name="switch_prev_comic">已切换到第一页</string>
+
+    <string name="my_message">我的消息</string>
+    <string name="my_task">任务</string>
+    <string name="my_download">我的下载</string>
+    <string name="my_state">我的动态</string>
+    <string name="my_game">我的游戏</string>
+    <string name="user_feedback">用户反馈</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="my_upadte">检查更新</string>
+    <string name="delete_with_underline"><u>删除</u></string>
+    <string name="notice">提示</string>
+    <string name="please_wait">请稍等</string>
+    <string name="cancel">取消</string>
+    <string name="grade_detail">等级</string>
+    <string name="my_game_history">我的试玩</string>
+    <string name="my_game_favor">我的收藏</string>
+    <string name="my_game_download">我的下载</string>
+    <string name="my_game_history_rate">个待评分</string>
+
+    <string name="mgh_play">直接玩</string>
+    <string name="mgh_download_and_play">边下边玩</string>
+    <string name="evaluate">评价</string>
+    <string name="evaluated">已评价</string>
+
+
+    <string name="download_start">下载</string>
+    <string name="download_ing">下载中</string>
+    <string name="download_fail">重新下载</string>
+    <string name="download_success">完成</string>
+
+    <string name="tag_hint">Tag为大小写字母，数字，下划线,中文， 多个用以逗号分隔</string>
+    <string name="alias_hint">Alias为大小写字母，数字，下划线</string>
+    <string name="style_hint">style为数字</string>
+    <string name="error_style_empty">style不能为空</string>
+    <string name="error_alias_empty">alias不能为空</string>
+    <string name="error_tag_empty">tag不能为空</string>
+    <string name="error_tag_gs_empty">格式不对</string>
+    <string name="error_network">网络连接异常,初始化失败 请检查网络！</string>
+    <string name="logining">程序在后台执行, 请查看日志！</string>
+    <string name="setting_su">设置成功</string>
+
+    <string name="repat_verification">重发验证码</string>
+    <string name="success_delete">删除成功</string>
+    <string name="pleaes_input_comment_context">请输入评论内容</string>
+
+    <!--newly added   user：wcy-->
+    <string name="ok">确定</string>
+    <string name="iswifi_content">当前非wifi网络,是否继续?</string>
+    <string name="content_null">评论内容不能为空</string>
+
+    <string name="quick_listen_desc">追听一技能，主要是用来更新章节的语音版本。当天忘语大大更新的章节，会尽快在本技能中以语音形式播出，听书技能会继续连载之前章节内容，道友既可以在听书技能中重温以前的故事，也可以在追听技能中，追听最新的故事情节。</string>
+    <string name="my_package">储物袋</string>
+    <string name="sort_user">排行</string>
+    <string name="my_state_text">动态信息数量</string>
+    <string name="sort_user_count">50</string>
+    <string name="my_task_unsuc">每日任务余量</string>
+    <string name="my_package_count">我的背包物品</string>
+    <string name="markets">店铺</string>
+
+    <string name="day_thanks">感谢提供题目的众位道友的鼎力支持，如果有更多可以提供题目\n欢迎加入QQ群：87709739（凡人app核心群）</string>
+
+    <string name="day_question_desc1">前五题每题答对即可获得10经验和1块灵石奖励，答错也可获得3经验值的奖励，在规定时间内不答题、不选择不得分。</string>
+    <string name="day_question_desc2">后五道题每题答对可获得15经验和2块灵石，答错也可获得5经验奖励，规定时间内不答题同样不得奖励。</string>
+    <string name="day_question_desc3">每日答题答对4到6道题 经验值+30,宗门贡献+10</string>
+    <string name="day_question_desc4">每日答题答对6到8道题 经验值+50,宗门贡献+30</string>
+    <string name="day_question_desc5">每日答题答对8到9道题 经验值+80,宗门贡献+50</string>
+    <string name="day_question_desc6">每日答题答对10道题 经验值+100,宗门贡献+80</string>
+    <string name="fg_recommend">凡人精品</string>
+    <string name="shrink">收起</string>
+    <string name="expand">显示全部</string>
+    <string name="read_more">展开</string>
+    <string name="read_less">收起</string>
+    <string name="sect_task">宗门任务</string>
+    <string name="sect_fight">宗门战</string>
+    <string name="mine_sect">我的宗门</string>
+    <string name="sect_event">宗门事务</string>
+    <string name="date_header_today">今天</string>
+    <string name="date_header_yesterday">昨天</string>
+
+    <!--empty view str start-->
+    <string name="no_avaliable_network">网络不可用,点击设置网络</string>
+    <string name="load_data_fail">页面加载失败,点击刷新</string>
+    <string name="load_data_fail2">加载不到数据呢，再试一次吧</string>
+    <string name="load_data_fail3">数据拉取失败了呢</string>
+    <string name="loading_data">正在努力获取数据中...</string>
+    <string name="load_data_empty">啥也没有</string>
+    <string name="refresh">刷新</string>
+    <string name="retry_tips">点击任意位置重试</string>
+    <string name="setting_net">设置网络</string>
+    <string name="no_play_history">暂无试玩</string>
+    <string name="no_favor">暂无收藏</string>
+    <string name="no_download">暂无下载</string>
+    <string name="no_order">暂无订单</string>
+    <!--empty view str end-->
+
+    <string name="go_on">继续</string>
+    <string name="delete">删除</string>
+    <string name="tips_mobile_network">您正在使用非WiFi网络，继续下载将会耗费流量</string>
+    <string name="tips_mobile_network2">您正在使用非WiFi网络，继续下载将会耗费流量（当前安装包大小%s）</string>
+
+    <!--我的下载-->
+    <string name="download_manage">下载管理</string>
+    <string name="state_pause">已暂停</string>
+    <string name="state_finish">已完成</string>
+    <string name="state_install">已安装</string>
+    <string name="state_failed">已失败</string>
+    <string name="action_wait">等待</string>
+    <string name="action_download">下载</string>
+    <string name="action_pause">暂停</string>
+    <string name="action_continue">继续</string>
+    <string name="action_install">安装</string>
+    <string name="action_open">打开</string>
+    <string name="action_failed">失败</string>
+    <string name="failed_to_open">打开失败</string>
+    <string name="failed_to_install">安装包已被删除,请重新下载</string>
+    <string name="delete_download_tips">确定要删除该下载?</string>
+
+    <!--我的试玩-->
+    <string name="delete_play_history_tips">确定删除游戏？</string>
+    <string name="delete_fail">删除失败，请重试</string>
+    <string name="delete_success">删除成功</string>
+    <string name="try_play">试玩</string>
+    <string name="history_play_directly">直接玩</string>
+    <string name="history_download_and_play">边下边玩</string>
+    <string name="offline_tip">应用已下线，是否删除该记录？</string>
+    <string name="hangup_play_unsupported">您设备不支持播放</string>
+
+    <!--我的收藏-->
+    <string name="delete_favor">确定删除该收藏？</string>
+    <string name="delete_favor_fail">取消收藏失败</string>
+    <string name="delete_favor_success">取消收藏成功</string>
+    <string name="do_favor_fail">收藏失败</string>
+    <string name="do_favor_success">收藏成功</string>
+
+    <!--详情-->
+    <string name="new_comments">最新评论</string>
+    <string name="top_comments">精彩评论</string>
+    <string name="manufacturer">厂商：</string>
+    <string name="size">大小：</string>
+    <string name="play_count">%d人试玩</string>
+    <string name="rating_count">%d人参与评分</string>
+    <string name="download">下载</string>
+
+    <!--评分-->
+    <string name="evaluate_title">为此游戏评分</string>
+    <string name="evaluate_tip_time">试玩游戏%d分钟即可对其评分，快试玩给TA一个评分吧！</string>
+    <string name="evaluate_tip_no_time">试玩游戏即可对其评分，快试玩给TA一个评分吧！</string>
+    <string name="write_your_comment">请写下你的宝贵评论</string>
+    <string name="no_comment_tip">还没有评论，快来抢沙发吧！</string>
+    <string name="my_evaluate">我的评分</string>
+    <string name="evaluate_5">神作</string>
+    <string name="evaluate_4">不错</string>
+    <string name="evaluate_3">一般</string>
+    <string name="evaluate_2">无聊</string>
+    <string name="evaluate_1">嫌弃</string>
+    <string name="upload_evaluate_success">提交成功</string>
+    <string name="upload_evaluate_fail">提交失败</string>
+
+    <!--评论-->
+    <string name="comment">评论</string>
+    <string name="comment_more">更多</string>
+    <string name="comment_hint">评论一下吧</string>
+    <string name="my_comment">我</string>
+    <string name="comment_reply">回复</string>
+    <string name="fold_comment">收起</string>
+    <string name="show_all_comment">全部%d条回复</string>
+    <string name="comment_try_play_time">试玩时长%d分钟</string>
+    <string name="comment_delete_dialog_tip">确定删除评论？</string>
+    <string name="comment_replies_title">全部回复</string>
+    <string name="comment_reply_hint">输入回复内容</string>
+    <string name="comment_reply_success">回复成功</string>
+    <string name="comment_reply_fail">回复失败</string>
+    <string name="comment_reply_load_list_fail">网络异常，回复内容加载失败</string>
+
+    <string name="strategy">攻略</string>
+    <string name="try_count">试玩人数</string>
+    <string name="download_count">下载人数</string>
+    <string name="advise_placeholder">建议平放于桌面，双手操作</string>
+
+    <string name="notify_msg_content">触摸了解详情</string>
+    <string name="notify_msg_error">游戏下载失败</string>
+    <string name="notify_msg_waiting">游戏正在等待下载</string>
+
+    <string name="state_free">空闲</string>
+    <string name="state_busy">繁忙</string>
+
+    <string name="load_error">加载失败,请重试</string>
+    <string name="loading_short">正在加载...</string>
+    <string name="loading">拼命加载中...</string>
+    <string name="load_failed">加载失败</string>
+    <string name="refresh_failed">刷新失败</string>
+
+    <!--反馈-->
+    <string name="report_success">错误反馈已提交，感谢支持</string>
+    <string name="report_success2">反馈已提交，感谢支持</string>
+    <string name="report_fail">反馈提交失败</string>
+    <string name="submit">提交</string>
+
+    <!--分享-->
+    <string name="error_info">错误信息</string>
+    <string name="share_title">《%s》太赞了，推荐这个游戏给你。</string>
+    <string name="share_error">分享失败，原因</string>
+    <string name="share_success">分享成功</string>
+    <string name="share_cancel">已取消分享</string>
+    <string name="tab_changxian">游戏尝鲜</string>
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_item"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:background="@color/color_white"
+    >
+
+    <TextView
+        android:id="@+id/tv_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="9.3dp"
+        android:text="1"
+        android:gravity="center"
+        android:textSize="13.4sp"
+        android:textColor="#434343"
+        />
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_sort"
+        android:layout_marginRight="9.3dp"
+        android:src="@mipmap/icon_user_default" />
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="46dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/iv_icon"
+        android:gravity="center_vertical"
+        android:layout_marginRight="9.3dp"
+        android:text="石墨"
+        android:ellipsize="end"
+        android:textSize="16.3sp"
+         />
+
+    <TextView
+        android:id="@+id/tv_bonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:background="@drawable/bonus_background"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/tv_name"
+        android:gravity="center"
+        android:text="石墨二级"
+        android:textSize="10sp"
+        android:textColor="#545353" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:src="@mipmap/icon_narrow_right" />
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+          android:background="#D4D4D4"
+          android:layout_width="match_parent"
+          android:layout_alignParentBottom="true"
+          android:layout_height="0.5dp">
+    </View>
+</RelativeLayout>
+

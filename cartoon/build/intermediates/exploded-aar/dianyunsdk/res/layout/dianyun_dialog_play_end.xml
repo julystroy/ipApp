@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="25dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="25dp">
+
+        <cn.idianyun.streaming.widget.RoundCornerImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-3dp"
+            android:layout_toRightOf="@id/iv_logo"
+            android:singleLine="true"
+            android:text="快餐暴动"
+            android:textColor="#333333"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="5dp"
+            android:maxLines="2"
+            android:text="快点下载下来玩吧！"
+            android:textColor="#2e2e2e"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_logo"
+            android:layout_alignLeft="@id/tv_desc"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+            <TextView
+                android:id="@+id/tv_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_desc"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/layout_star"
+                android:text="7.5"
+                android:textColor="#ff9758"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_logo"
+            android:layout_marginTop="25dp">
+
+            <Button
+                android:id="@+id/btn_exit"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:background="@drawable/dialog_btn_bg_gray"
+                android:text="退出"
+                android:textColor="#2e2e2e"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btn_download"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/dialog_btn_bg_blue"
+                android:text="下载"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_bg_bottom"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/tv_share_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="游戏太赞了，分享给好友"
+            android:textColor="#2e2e2e"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp">
+
+            <LinearLayout
+                android:id="@+id/layout_weixin"
+                android:layout_width="@dimen/share_item_width"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btn_weixin"
+                    android:layout_width="@dimen/share_icon_size"
+                    android:layout_height="@dimen/share_icon_size"
+                    android:src="@drawable/weixin" />
+
+                <TextView
+                    android:id="@+id/tv_weixin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="微信"
+                    android:textColor="#2e2e2e"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_weixin_circle"
+                android:layout_width="@dimen/share_item_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/share_item_margin"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btn_weixin_circle"
+                    android:layout_width="@dimen/share_icon_size"
+                    android:layout_height="@dimen/share_icon_size"
+                    android:src="@drawable/weixin_circle" />
+
+                <TextView
+                    android:id="@+id/tv_weixin_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="微信朋友圈"
+                    android:textColor="#2e2e2e"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_qq"
+                android:layout_width="@dimen/share_item_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/share_item_margin"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btn_qq"
+                    android:layout_width="@dimen/share_icon_size"
+                    android:layout_height="@dimen/share_icon_size"
+                    android:src="@drawable/qq" />
+
+                <TextView
+                    android:id="@+id/tv_qq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="QQ好友"
+                    android:textColor="#2e2e2e"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_qzone"
+                android:layout_width="@dimen/share_item_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/share_item_margin"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/btn_qzone"
+                    android:layout_width="@dimen/share_icon_size"
+                    android:layout_height="@dimen/share_icon_size"
+                    android:src="@drawable/qzone" />
+
+                <TextView
+                    android:id="@+id/tv_qzone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="QQ空间"
+                    android:textColor="#2e2e2e"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

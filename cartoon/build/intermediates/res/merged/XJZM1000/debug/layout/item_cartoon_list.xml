@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="5dp"
+              android:layout_marginLeft="5dp"
+              android:layout_marginBottom="9.7dp"
+              android:orientation="vertical">
+
+    <View xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/line_room"
+          android:background="#fff"
+          android:visibility="gone"
+          android:layout_width="1dp"
+          android:layout_height="30.7dp">
+    </View>
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?attr/selectableItemBackground"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/icon_cover"
+                android:layout_width="match_parent"
+                android:layout_height="225dp"
+                android:scaleType="center"
+                android:src="@mipmap/icon_cartoon_cover"/>
+
+            <TextView
+                android:id="@+id/tv_create_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/cartoon_time_bg"
+                android:paddingBottom="4dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="4dp"
+                android:textColor="#FFF"
+                android:textSize="12sp"
+                tools:text="2016"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:paddingEnd="@dimen/title_padding_right"
+            android:paddingStart="@dimen/title_padding_left"
+            android:text="第一话"
+            android:background="@color/color_white"
+            android:textColor="@color/color_cartoon_item_title"
+            android:textSize="@dimen/font_title_size"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:layout_marginEnd="@dimen/title_padding_left"
+            android:layout_marginStart="@dimen/title_padding_right"
+            android:background="@color/color_line_bg"/>
+    </LinearLayout>
+    <include layout="@layout/mutual_layout"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e5e5e5"/>
+
+
+
+</LinearLayout>

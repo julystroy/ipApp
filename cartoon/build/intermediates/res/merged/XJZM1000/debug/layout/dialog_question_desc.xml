@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@drawable/dialogbackground"
+              android:layout_width="268.3dp"
+              android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="继续答题，需要消耗1个灵石"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="27.3dp"
+        android:layout_marginRight="27.3dp"
+        android:textSize="16sp"
+        android:lineSpacingExtra="8dp"
+        android:textColor="#2f2f2f"
+        />
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/bt_cost_stone"
+        android:layout_width="183.3dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="30.7dp"
+        android:background="@drawable/button_cancel"
+        android:text="1灵石"
+        android:textSize="13.4sp"
+        android:gravity="center"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1.灵石购买题答对，每题可获得+15经验和+2个灵石\n2.答错可获得+5经验值奖励\n3.规定时间内，不答则无任何奖励"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="27.3dp"
+        android:layout_marginRight="27.3dp"
+        android:layout_marginBottom="31dp"
+        android:textSize="12sp"
+        android:lineSpacingExtra="8dp"
+        android:textColor="#666666"
+        />
+
+</LinearLayout>

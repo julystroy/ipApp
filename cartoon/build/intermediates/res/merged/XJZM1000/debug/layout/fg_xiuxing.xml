@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F2F2F2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <include layout="@layout/title_layout"/>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f4f4f4">
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:background="@mipmap/xiuxing_bg">
+        <ImageView
+            android:id="@+id/xx_unload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/xiuxing_unload"/>
+
+        <LinearLayout
+            android:id="@+id/xx_load"
+            android:visibility="gone"
+            android:layout_marginTop="29dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_vertical|center">
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="凡人"
+                    android:textSize="18sp"
+                    android:textColor="@color/color_white"/>
+
+                <TextView
+                    android:id="@+id/tv_level"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_white"
+                    android:text="化神"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:background="@drawable/background_full_orrange"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_day"
+                android:layout_marginTop="18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16sp"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:drawableRight="@mipmap/ic_explain"
+                android:drawablePadding="3dp"
+                android:text="已修行000天"/>
+            
+            <TextView
+                android:id="@+id/tv_sign"
+                android:layout_marginTop="25dp"
+                android:textColor="@color/color_white"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="今日签到"
+                android:background="@drawable/bonus_background_fullred2"
+                android:layout_width="84dp"
+                android:layout_height="32dp"/>
+
+        </LinearLayout>
+    </FrameLayout>
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+            <include layout="@layout/item_gradview_mine"/>
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <com.cartoon.view.MyGridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="2"
+                android:listSelector="@null"
+                android:verticalSpacing="1.0px"
+                android:horizontalSpacing="1.0px"
+                android:scrollbars="none"
+                android:background="@color/color_white"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rl_chat"
+        android:layout_gravity="bottom|right"
+        android:layout_width="50dp"
+        android:layout_marginRight="13.3dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="50dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/chat"
+            android:layout_centerInParent="true"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/icon_chat"/>
+        <TextView
+            android:id="@+id/chat_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="99+"
+            android:gravity="center"
+            android:textSize="11sp"
+            android:textColor="#fff"
+            android:background="@drawable/red_bg"/>
+    </RelativeLayout>
+</FrameLayout>

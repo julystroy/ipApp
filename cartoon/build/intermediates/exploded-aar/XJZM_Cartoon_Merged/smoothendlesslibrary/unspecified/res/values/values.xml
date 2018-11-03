@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SmoothEndLessRecycler"><attr format="reference" name="sel_footerLayout"/><attr format="string" name="sel_buttonRetryText"/><attr format="string" name="sel_loadingText"/></declare-styleable>
+    <dimen format="dimension" name="endless_footer_height">48dp</dimen>
+    <item name="endless_loading_text_id" type="id"/>
+    <item name="endless_retry_button_id" type="id"/>
+    <item name="endless_view_switcher_id" type="id"/>
+    <item name="endless_view_type_loading" type="id"/>
+    <string name="app_name">SmoothEndLessLibrary</string>
+    <string name="endless_string_loading_text">Loading</string>
+    <string name="endless_string_retry_text">Load Failed; Try it again</string>
+</resources>

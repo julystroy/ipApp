@@ -1,0 +1,210 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+apply plugin: 'org.greenrobot.greendao'
+//bugtags，正式版需移除
+/*apply plugin: 'com.bugtags.library.plugin'
+bugtags {
+    //自动上传符号表功能配置，如果需要根据 build varint 配置，请参考帮助中心->符号表->Android 符号表->配置自动上传符号表
+    appKey "d4009917486a96a19add874f764bfa8c"  //这里是你的 appKey
+    appSecret "40a01c7810157205a10acfdd309b6a2d"    //这里是你的 appSecret，管理员在设置页可以查看
+    mappingUploadEnabled true
+
+    //网络跟踪功能配置(企业版)
+    trackingNetworkEnabled true
+}*/
+
+android {
+
+    //bugtags，正式版需移除
+    //useLibrary 'org.apache.http.legacy'
+
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "cn.com.xuanjiezhimen"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 31
+        versionName "2.1.1"
+
+
+        //扩展65535，线上删除
+      multiDexEnabled true
+
+    }
+
+    packagingOptions {
+        exclude 'META-INF/NOTICE' // will not include NOTICE file
+        exclude 'META-INF/LICENSE' // will not include LICENSE file
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
+    signingConfigs {
+        debugConfig {
+            storeFile file('/home/cc/AndroidStudio/XJZM_Cartoon_Merged/cartoon.jks')
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+    buildTypes {
+        release {
+            debuggable false
+            minifyEnabled true  //混淆代码
+            shrinkResources true   //去除无用资源
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            ndk {
+                //abiFilters "armeabi" ,"x86"
+                abiFilters "armeabi-v7a", "x86"
+            }
+        }
+        debug {
+            signingConfig signingConfigs.debugConfig
+            ndk {
+//                abiFilters "armeabi" , "x86"
+                abiFilters "armeabi-v7a", "x86"
+            }
+        }
+    }
+
+    packagingOptions {
+        exclude 'lib/mips/libpl_droidsonroids_gif.so'
+        exclude 'lib/mips64/libpl_droidsonroids_gif.so'
+        exclude 'lib/x86/libpl_droidsonroids_gif.so'
+        exclude 'lib/x86_64/libpl_droidsonroids_gif.so'
+    }
+    sourceSets.main {
+        jniLibs.srcDirs = ['libs']
+        jni.srcDirs = []
+    }
+
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+
+
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def outputFile = output.outputFile
+            if (outputFile != null && outputFile.name.endsWith('.apk')) {
+                def fileName = "Cartoon_v${defaultConfig.versionName}_${defaultConfig.versionCode}_${variant.productFlavors[0].name}.apk"
+                output.outputFile = new File(outputFile.parent, fileName)
+            }
+        }
+    }
+
+    productFlavors {
+        XJZM1000 {//自己公司
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "XJZM1000"]
+        }
+        XJZM1001 {//360
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "XJZM1001"]
+        }
+        XJZM1002 {//百度
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "XJZM1002"]
+        }
+        XJZM1003 {//豌豆荚
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "XJZM1003"]
+        }
+        XJZM1004 {//腾讯
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "XJZM1004"]
+        }
+        XJZM1005 {//小米
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "XJZM1005"]
+        }
+        XJZM1006 {//华为-智汇云
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "XJZM1006"]
+        }
+        XJZM1007 {//魅族
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "XJZM1007"]
+        }
+        XJZM1008 {//联想（乐商店）
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "XJZM1008"]
+        }
+    }
+
+    tasks.withType(JavaCompile) {
+        options.encoding = "UTF-8"
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            java.srcDirs = ['src/main/java', 'src/main/java-gen']
+        }
+    }
+}
+greendao {
+    schemaVersion 23
+    targetGenDir 'src/main/java'
+}
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+    }
+}
+ext {
+    flexboxVersion = '0.2.5'
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.squareup.okio:okio:1.14.0'
+    //compile 'com.squareup.okhttp:okhttp:2.4.0'
+    compile 'com.squareup.okhttp3:okhttp:3.10.0'
+    compile 'com.zhy:okhttputils:2.6.2'
+    compile 'com.squareup.okhttp3:mockwebserver:3.5.0'
+    compile 'com.zhy:autolayout:1.4.3'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.github.junrar:junrar:0.7'
+    //compile 'de.greenrobot:greendao:2.1.0'
+    compile 'org.greenrobot:greendao:3.0.1'
+    compile 'org.greenrobot:greendao-generator:3.0.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.jakewharton:butterknife:8.0.1'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    //    compile 'fm.qingting.sdk:qingting:2.1.0'
+
+    // compile 'fm.qingting.sdk:qingting:2.1.5'
+    compile 'com.afollestad.material-dialogs:core:0.8.5.9'
+    compile 'com.android.support:design:23.2.1'
+    compile 'com.github.castorflex.verticalviewpager:library:19.0.1'
+    compile 'com.jude:swipebackhelper:3.1.2'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    compile 'org.sufficientlysecure:html-textview:1.8'
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    compile 'com.baidu.mobstat:mtj-sdk:latest.integration'
+    //bugtags，正式版需移除
+    compile "com.google.android:flexbox:$flexboxVersion"
+    // compile 'com.bugtags.library:bugtags-lib:latest.integration'
+    compile project(':CarttonLibrary')
+    compile project(':smoothendlesslibrary')
+    compile project(':pickimagelib-release')
+    compile project(':sharelib')
+    compile 'com.github.chrisbanes.photoview:library:1.2.4'
+    compile 'com.android.support:cardview-v7:23.1.0'
+    //扩展65535，线上删除
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.github.ksoichiro:android-observablescrollview:1.6.0'
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+    compile 'com.nineoldandroids:library:2.4.0'
+    //dianyun  sdk
+    compile 'com.google.code.gson:gson:2.3.1'
+    compile 'com.mcxiaoke.volley:library:1.0.18'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.7'
+    compile(name: 'dianyunsdk', ext: 'aar')
+    compile project(':Downloader')
+}

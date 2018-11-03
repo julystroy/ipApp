@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_stroke_width">7dp</dimen>
+    <dimen name="default_background_stroke_width">3dp</dimen>
+    <dimen name="font_title_size">17.3sp</dimen>
+    <dimen name="font_tab_size">11sp</dimen>
+    <dimen name="font_menu_size">14sp</dimen>
+    <dimen name="font_mutual_size">10sp</dimen>
+
+    <dimen name="title_item_width">12dp</dimen>
+    <dimen name="title_item_indicator_height">5px</dimen>
+    <dimen name="title_padding_left">11dp</dimen>
+    <dimen name="title_padding_right">11dp</dimen>
+    <dimen name="title_button_padding">5dp</dimen>
+    <dimen name="item_padding">11.7dp</dimen>
+    <dimen name="item_padding_top">16dp</dimen>
+
+    <dimen name="menu_item_padding">20dp</dimen>
+    <dimen name="item_drawable_padding">8dp</dimen>
+
+    <dimen name="tab_item_drawable_padding">5px</dimen>
+    <dimen name="tab_padding_top">16px</dimen>
+    <dimen name="tab_padding_bottom">8px</dimen>
+
+    <dimen name="line_height">1.5dp</dimen>
+
+    <dimen name="title_bar_height">38dp</dimen>
+    <dimen name="reader_title_bar_height">52dp</dimen>
+    <dimen name="menu_bar_height">48dp</dimen>
+    <dimen name="tab_bar_height">46dp</dimen>
+    <dimen name="default_radius">6dp</dimen>
+    <dimen name="grid_padding">4.3dp</dimen>
+    <dimen name="richText_pading">10sp</dimen>
+    <dimen name="divider">4dp</dimen>
+    <dimen name="dp10">10dp</dimen>
+    <dimen name="dp3">3dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+    <!--messagelist-->
+    <dimen name="aurora_size_date_text">16sp</dimen>
+    <dimen name="aurora_size_event_text">12sp</dimen>
+    <dimen name="aurora_padding_date_text">5dp</dimen>
+    <dimen name="aurora_padding_event_text">5dp</dimen>
+    <dimen name="aurora_width_msg_avatar">50dp</dimen>
+    <dimen name="aurora_height_msg_avatar">50dp</dimen>
+    <dimen name="aurora_radius_avatar_default">5dp</dimen>
+    <dimen name="aurora_size_receive_text">18sp</dimen>
+    <dimen name="aurora_padding_receive_text_left">15dp</dimen>
+    <dimen name="aurora_padding_receive_text_top">5dp</dimen>
+    <dimen name="aurora_padding_receive_text_right">10dp</dimen>
+    <dimen name="aurora_padding_receive_text_bottom">5dp</dimen>
+    <dimen name="aurora_size_send_text">18sp</dimen>
+    <dimen name="aurora_padding_send_text_left">10dp</dimen>
+    <dimen name="aurora_padding_send_text_top">2dp</dimen>
+    <dimen name="aurora_padding_send_text_right">15dp</dimen>
+    <dimen name="aurora_padding_send_text_bottom">2dp</dimen>
+    <dimen name="aurora_radius_photo_default">5dp</dimen>
+    <dimen name="aurora_line_spacing_extra_default">2dp</dimen>
+
+
+
+    <dimen name="input_button_width">60dp</dimen>
+    <dimen name="input_button_height">30.7dp</dimen>
+    <dimen name="input_button_margin">10dp</dimen>
+    <dimen name="input_text_size">13sp</dimen>
+    <dimen name="input_padding_left">16dp</dimen>
+    <dimen name="input_padding_right">16dp</dimen>
+    <dimen name="input_padding_top">8dp</dimen>
+    <dimen name="input_padding_bottom">8dp</dimen>
+
+    <dimen name="message_bubble_corners_radius">15dp</dimen>
+
+    <dimen name="dialog_avatar_width">56dp</dimen>
+    <dimen name="dialog_avatar_height">56dp</dimen>
+    <dimen name="dialog_last_message_avatar_width">24dp</dimen>
+    <dimen name="dialog_last_message_avatar_height">24dp</dimen>
+    <dimen name="dialog_title_text_size">18sp</dimen>
+    <dimen name="dialog_message_text_size">16sp</dimen>
+    <dimen name="dialog_date_text_size">14sp</dimen>
+    <dimen name="dialog_unread_bubble_text_size">13sp</dimen>
+    <dimen name="dialog_divider_margin_left">88dp</dimen>
+    <dimen name="dialog_divider_margin_right">0dp</dimen>
+
+    <dimen name="message_avatar_width">40dp</dimen>
+    <dimen name="message_avatar_height">40dp</dimen>
+    <dimen name="message_padding_left">12dp</dimen>
+    <dimen name="message_padding_right">12dp</dimen>
+    <dimen name="message_padding_top">12dp</dimen>
+    <dimen name="message_padding_bottom">12dp</dimen>
+    <dimen name="message_text_size">16sp</dimen>
+    <dimen name="message_time_text_size">13sp</dimen>
+    <dimen name="message_date_header_text_size">16sp</dimen>
+    <dimen name="message_date_header_padding">16dp</dimen>
+    <dimen name="message_incoming_bubble_margin_right">40dp</dimen>
+    <dimen name="message_outcoming_bubble_margin_left">48dp</dimen>
+
+
+
+    <!--download-->
+    <dimen name="download_logo_size">55dp</dimen>
+    <dimen name="btn_download_width">55dp</dimen>
+    <dimen name="btn_download_height">25dp</dimen>
+    <dimen name="download_progressbar_height">4dp</dimen>
+    <dimen name="download_progressbar_radius">2dp</dimen>
+
+    <dimen name="blue_line_width">3.3dp</dimen>
+    <dimen name="blue_line_height">16.3dp</dimen>
+    <dimen name="title_after_blue_line">15sp</dimen>
+    <dimen name="title_margin_to_blue_line">10dp</dimen>
+
+    <dimen name="user_avatar_medium">48dp</dimen>
+    <dimen name="user_avatar_comment_list">33dp</dimen>
+    <dimen name="user_avatar_bg_comment_list">37dp</dimen>
+    <dimen name="user_avatar_big">60dp</dimen>
+
+    <!--reply-->
+    <dimen name="reply_button_height">30dp</dimen>
+    <dimen name="reply_button_width">60dp</dimen>
+    <dimen name="reply_edit_text_width">255dp</dimen>
+    <dimen name="reply_edit_text_height">40dp</dimen>
+    <dimen name="reply_edit_text_right_margin">15dp</dimen>
+    <dimen name="reply_bottom_margin">15dp</dimen>
+
+    <!-- font -->
+    <dimen name="title_text_size">16sp</dimen>
+    <dimen name="small_title_text_size">13sp</dimen>
+    <dimen name="text_size_large">16sp</dimen>
+    <dimen name="text_size_user_name">15sp</dimen>
+    <dimen name="text_size_normal">14sp</dimen>
+    <dimen name="text_size_medium_small">12sp</dimen>
+    <dimen name="text_size_small">10sp</dimen>
+    <dimen name="text_size_small2">10.7sp</dimen>
+    <dimen name="text_size_small3">8sp</dimen>
+    <dimen name="text_size_small4">9sp</dimen>
+    <dimen name="text_size_dialog_textView">13.3sp</dimen>
+    <dimen name="button_text_size">13sp</dimen>
+    <dimen name="topgame_account_state">9sp</dimen>
+
+    <!--list height-->
+    <dimen name="mine_game_list_height">57dp</dimen>
+
+    <!-- Detail head height -->
+    <dimen name="detail_logo">100dp</dimen>
+    <dimen name="detail_header_height">164dp</dimen>
+    <dimen name="detail_bottom_height">50dp</dimen>
+    <dimen name="detail_bottom_button_height">30dp</dimen>
+    <dimen name="listview_header_height">211dp</dimen>
+    <dimen name="padding_height">56dp</dimen>
+    <dimen name="header_poster_height">230dp</dimen>
+    <dimen name="detail_slide_height">200dp</dimen>
+    <dimen name="detail_slidingtab_height">46dp</dimen>
+    <dimen name="detail_slidingtab_container_height">48dp</dimen>
+    <dimen name="interception_layout_padding">97dp</dimen>
+    <dimen name="detail_tag_radius">9dp</dimen>
+    <dimen name="detail_vertical_poster_width">101dp</dimen>
+    <dimen name="detail_vertical_poster_height">180dp</dimen>
+    <dimen name="detail_horizontal_poster_width">267dp</dimen>
+    <dimen name="detail_horizontal_poster_height">150dp</dimen>
+    <dimen name="editor_recommend_text">13sp</dimen>
+    <dimen name="detail_rating_text">71sp</dimen>
+    <dimen name="detail_header_margin">15dp</dimen>
+    <dimen name="group_gap">10dp</dimen>
+
+    <dimen name="btn_account_state_width">30dp</dimen>
+    <dimen name="btn_account_state_height">14dp</dimen>
+    <dimen name="btn_play_width">58dp</dimen>
+    <dimen name="btn_play_height">26dp</dimen>
+
+    <dimen name="list_view_item_padding_vertical">15dp</dimen>
+    <dimen name="list_view_item_padding_horizon">10dp</dimen>
+    <dimen name="list_item_separator_line_high">0.3dp</dimen>
+
+    <dimen name="red_spot_diameter">6dp</dimen>
+    <dimen name="tag_top_padding">1.3dp</dimen>
+    <dimen name="tag_left_padding">6.3dp</dimen>
+
+    <dimen name="poster_margin">10dp</dimen>
+    <dimen name="btn_favorite_play_width">60dp</dimen>
+
+</resources>

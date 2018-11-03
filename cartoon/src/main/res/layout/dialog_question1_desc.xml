@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/question_desc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/dialogbackground"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:layout_marginTop="27dp"
+            android:layout_marginBottom="19dp"
+            android:text="答题规则"/>
+
+            <TextView
+                android:textSize="12sp"
+                android:text="@string/day_question_desc1"
+                android:lineSpacingExtra="3dp"
+                android:textColor="@color/black"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="12sp"
+        android:layout_marginTop="3dp"
+        android:textColor="@color/black"
+        android:text="@string/day_question_desc2"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black"
+        android:text="@string/day_question_desc3"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black"
+        android:text="@string/day_question_desc4"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black"
+        android:text="@string/day_question_desc5"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textSize="12sp"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/black"
+        android:text="@string/day_question_desc6"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="13dp"
+        android:textSize="12sp"
+        android:text="（此外额外奖励需要十道题全部答完才可以获得，倒计时结束未答题按答错计算且无经验和灵石）"
+        android:lineSpacingExtra="3dp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"/>
+
+
+    </LinearLayout>
+

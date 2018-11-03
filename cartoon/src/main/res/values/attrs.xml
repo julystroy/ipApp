@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SelectableImageView">
+        <attr name="pi_selectable" format="boolean" />
+        <attr name="pi_selectedColor" format="color" />
+
+    </declare-styleable>
+    <declare-styleable name="CircularProgressBar">
+        <attr name="cpb_progress" format="integer" />
+        <attr name="cpb_progressbar_color" format="color" />
+        <attr name="cpb_background_progressbar_color" format="color" />
+        <attr name="cpb_progressbar_width" format="dimension" />
+        <attr name="cpb_background_progressbar_width" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="MessagesList">
+
+        <attr name="textAutoLink">
+            <flag name="all" value="15"/>
+            <flag name="email" value="2"/>
+            <flag name="map" value="8"/>
+            <flag name="none" value="0"/>
+            <flag name="phone" value="4"/>
+            <flag name="web" value="1"/>
+        </attr>
+
+        <attr name="incomingTextLinkColor" format="color|reference"/>
+        <attr name="outcomingTextLinkColor" format="color|reference"/>
+
+        <attr name="incomingAvatarWidth" format="dimension|reference"/>
+        <attr name="incomingAvatarHeight" format="dimension|reference"/>
+
+        <attr name="incomingBubbleDrawable" format="reference"/>
+        <attr name="incomingDefaultBubbleColor" format="color|reference"/>
+        <attr name="incomingDefaultBubblePressedColor" format="color|reference"/>
+        <attr name="incomingDefaultBubbleSelectedColor" format="color|reference"/>
+
+        <attr name="incomingImageOverlayDrawable" format="reference"/>
+        <attr name="incomingDefaultImageOverlayPressedColor" format="color|reference"/>
+        <attr name="incomingDefaultImageOverlaySelectedColor" format="color|reference"/>
+
+        <attr name="incomingBubblePaddingLeft" format="dimension|reference"/>
+        <attr name="incomingBubblePaddingRight" format="dimension|reference"/>
+        <attr name="incomingBubblePaddingTop" format="dimension|reference"/>
+        <attr name="incomingBubblePaddingBottom" format="dimension|reference"/>
+
+        <attr name="incomingTextColor" format="color|reference"/>
+        <attr name="incomingTextSize" format="dimension|reference"/>
+        <attr name="incomingTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr>
+
+        <attr name="incomingTimeTextColor" format="color|reference"/>
+        <attr name="incomingTimeTextSize" format="dimension|reference"/>
+        <attr name="incomingTimeTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr>
+
+        <attr name="incomingImageTimeTextColor" format="color|reference"/>
+        <attr name="incomingImageTimeTextSize" format="dimension|reference"/>
+        <attr name="incomingImageTimeTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr>
+
+        <attr name="outcomingBubbleDrawable" format="reference"/>
+        <attr name="outcomingDefaultBubbleColor" format="color|reference"/>
+        <attr name="outcomingDefaultBubblePressedColor" format="color|reference"/>
+        <attr name="outcomingDefaultBubbleSelectedColor" format="color|reference"/>
+
+        <attr name="outcomingImageOverlayDrawable" format="reference"/>
+        <attr name="outcomingDefaultImageOverlayPressedColor" format="color|reference"/>
+        <attr name="outcomingDefaultImageOverlaySelectedColor" format="color|reference"/>
+
+        <attr name="outcomingBubblePaddingLeft" format="dimension|reference"/>
+        <attr name="outcomingBubblePaddingRight" format="dimension|reference"/>
+        <attr name="outcomingBubblePaddingTop" format="dimension|reference"/>
+        <attr name="outcomingBubblePaddingBottom" format="dimension|reference"/>
+
+        <attr name="outcomingTextColor" format="color|reference"/>
+        <attr name="outcomingTextSize" format="dimension|reference"/>
+        <attr name="outcomingTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr>
+
+        <attr name="outcomingTimeTextColor" format="color|reference"/>
+        <attr name="outcomingTimeTextSize" format="dimension|reference"/>
+        <attr name="outcomingTimeTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr>
+
+        <attr name="outcomingImageTimeTextColor" format="color|reference"/>
+        <attr name="outcomingImageTimeTextSize" format="dimension|reference"/>
+        <attr name="outcomingImageTimeTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr>
+
+        <attr name="dateHeaderPadding" format="dimension|reference"/>
+        <attr name="dateHeaderFormat" format="string|reference"/>
+        <attr name="dateHeaderTextColor" format="color|reference"/>
+        <attr name="dateHeaderTextSize" format="dimension|reference"/>
+        <attr name="dateHeaderTextStyle">
+            <flag name="normal" value="0"/>
+            <flag name="bold" value="1"/>
+            <flag name="italic" value="2"/>
+        </attr>
+
+    </declare-styleable>
+    <declare-styleable name="MessageInput">
+        <attr name="inputButtonBackground" format="reference"/>
+        <attr name="inputButtonDefaultBgColor" format="color|reference"/>
+        <attr name="inputButtonDefaultBgPressedColor" format="color|reference"/>
+        <attr name="inputButtonDefaultBgDisabledColor" format="color|reference"/>
+
+        <attr name="inputButtonIcon" format="reference"/>
+        <attr name="inputButtonDefaultIconColor" format="color|reference"/>
+        <attr name="inputButtonDefaultIconPressedColor" format="color|reference"/>
+        <attr name="inputButtonDefaultIconDisabledColor" format="color|reference"/>
+
+        <attr name="inputButtonMargin" format="dimension|reference"/>
+        <attr name="inputButtonWidth" format="dimension|reference"/>
+        <attr name="inputButtonHeight" format="dimension|reference"/>
+
+        <attr name="showAttachmentButton" format="boolean"/>
+        <attr name="attachmentButtonBackground" format="reference"/>
+        <attr name="attachmentButtonDefaultBgColor" format="color|reference"/>
+        <attr name="attachmentButtonDefaultBgPressedColor" format="color|reference"/>
+        <attr name="attachmentButtonDefaultBgDisabledColor" format="color|reference"/>
+
+        <attr name="attachmentButtonIcon" format="reference"/>
+        <attr name="attachmentButtonDefaultIconColor" format="color|reference"/>
+        <attr name="attachmentButtonDefaultIconPressedColor" format="color|reference"/>
+        <attr name="attachmentButtonDefaultIconDisabledColor" format="color|reference"/>
+
+        <attr name="attachmentButtonMargin" format="dimension|reference"/>
+        <attr name="attachmentButtonWidth" format="dimension|reference"/>
+        <attr name="attachmentButtonHeight" format="dimension|reference"/>
+
+        <attr name="inputMaxLines" format="integer"/>
+        <attr name="inputHint" format="string"/>
+
+        <attr name="inputText" format="string"/>
+        <attr name="inputTextSize" format="dimension|reference"/>
+        <attr name="inputTextColor" format="color|reference"/>
+        <attr name="inputHintColor" format="color|reference"/>
+
+        <attr name="inputBackground" format="reference"/>
+        <attr name="inputCursorDrawable" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="FlikerProgressBar">
+        <attr name="textSize" format="dimension"/>
+
+        <attr name="loadingColor" format="color"/>
+
+        <attr name="stopColor" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="CountdownView">
+        <attr name="isHideTimeBackground" format="boolean" />
+        <attr name="isShowTimeBgDivisionLine" format="boolean" />
+        <attr name="timeBgDivisionLineColor" format="color" />
+        <attr name="timeBgDivisionLineSize" format="dimension" />
+        <attr name="timeBgColor" format="color" />
+        <attr name="timeBgSize" format="dimension" />
+        <attr name="timeBgRadius" format="dimension" />
+
+        <attr name="isTimeTextBold" format="boolean" />
+        <attr name="timeTextSize" format="dimension" />
+        <attr name="timeTextColor" format="color" />
+        <attr name="isShowDay" format="boolean" />
+        <attr name="isShowHour" format="boolean" />
+        <attr name="isShowMinute" format="boolean" />
+        <attr name="isShowSecond" format="boolean" />
+        <attr name="isShowMillisecond" format="boolean" />
+
+        <attr name="isSuffixTextBold" format="boolean" />
+        <attr name="suffixTextSize" format="dimension" />
+        <attr name="suffixTextColor" format="color" />
+        <attr name="suffix" format="string" />
+        <attr name="suffixDay" format="string" />
+        <attr name="suffixHour" format="string" />
+        <attr name="suffixMinute" format="string" />
+        <attr name="suffixSecond" format="string" />
+        <attr name="suffixMillisecond" format="string" />
+        <attr name="suffixGravity">
+            <enum name="top" value="0" />
+            <enum name="center" value="1" />
+            <enum name="bottom" value="2" />
+        </attr>
+        <attr name="suffixLRMargin" format="dimension" />
+        <attr name="suffixDayLeftMargin" format="dimension" />
+        <attr name="suffixDayRightMargin" format="dimension" />
+        <attr name="suffixHourLeftMargin" format="dimension" />
+        <attr name="suffixHourRightMargin" format="dimension" />
+        <attr name="suffixMinuteLeftMargin" format="dimension" />
+        <attr name="suffixMinuteRightMargin" format="dimension" />
+        <attr name="suffixSecondLeftMargin" format="dimension" />
+        <attr name="suffixSecondRightMargin" format="dimension" />
+        <attr name="suffixMillisecondLeftMargin" format="dimension" />
+
+        <attr name="isShowTimeBgBorder" format="boolean" />
+        <attr name="timeBgBorderColor" format="color" />
+        <attr name="timeBgBorderSize" format="dimension" />
+        <attr name="timeBgBorderRadius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewExpandableAnimation">
+        <attr name="tvea_expandLines" format="integer" />
+        <attr name="tvea_shrinkBitmap" format="reference" />
+        <attr name="tvea_expandBitmap" format="reference" />
+        <attr name="tvea_textStateColor" format="color" />
+        <attr name="tvea_textContentColor" format="color" />
+        <attr name="tvea_textContentSize" format="dimension" />
+        <attr name="tvea_textShrink" format="string" />
+        <attr name="tvea_textExpand" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="LimitLineTextView">
+        <attr name="maxLine" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="MarqueeLayout">
+        <attr name="switchTime" format="integer"/>
+        <attr name="scrollTime" format="integer"/>
+        <attr name="orientation2" format="enum">
+            <enum name="up" value="1"/>
+            <enum name="down" value="2"/>
+            <enum name="left" value="3"/>
+            <enum name="right" value="4"/>
+        </attr>
+        <attr name="enableAlphaAnim" format="boolean"/>
+        <attr name="enableScaleAnim" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="RoundCornerImageView">
+        <attr name="roundWidth" format="dimension" />
+        <attr name="roundHeight" format="dimension" />
+    </declare-styleable>
+</resources>

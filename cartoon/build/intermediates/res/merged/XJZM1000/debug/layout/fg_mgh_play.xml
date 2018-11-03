@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ViewFlipper
+            android:id="@+id/flipper"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <cndroid.com.smoothendlesslibrary.EndLessRecyclerView
+                    android:id="@+id/recycle_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:sel_buttonRetryText="加载失败,点击重试"
+                    app:sel_loadingText="加载中" />
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <include layout="@layout/layout_loading" />
+
+            <include layout="@layout/layout_reload" />
+
+            <include layout="@layout/layout_empty" />
+        </ViewFlipper>
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

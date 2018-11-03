@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/popu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/menu_bar_height"
+            android:background="@color/color_bg"
+            android:paddingEnd="@dimen/title_padding_right"
+            android:paddingStart="@dimen/title_padding_left">
+
+            <TextView
+                android:id="@+id/tv_desc"
+                style="@style/home_menu_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/menu_desc" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="目录"
+                android:textColor="@color/color_title_font"
+                android:textSize="@dimen/font_title_size" />
+
+            <TextView
+                android:id="@+id/tv_sort"
+                style="@style/home_menu_item"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_alignParentEnd="true"
+                android:drawableStart="@mipmap/icon_sort"
+                android:text="@string/menu_sort" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_height"
+            android:background="@color/color_line_bg" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="18.7dp"
+            android:background="#f8f8f8"
+           />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FAFAFA"
+            android:scrollbars="vertical" />
+
+        <RelativeLayout
+            android:id="@+id/rl_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#000">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/icon_collect_cancel" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

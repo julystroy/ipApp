@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FBFBFB"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/list_view_item_padding_vertical"
+        android:paddingLeft="@dimen/list_view_item_padding_horizon"
+        android:paddingRight="@dimen/list_view_item_padding_horizon">
+
+        <ImageView
+            android:id="@+id/iv_ph_logo"
+            android:layout_width="@dimen/download_logo_size"
+            android:layout_height="@dimen/download_logo_size"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/poster_margin"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_ph_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/layout_action"
+            android:layout_toRightOf="@id/iv_ph_logo"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_ph_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="快餐暴动"
+                android:textColor="@color/maintitle_text_color"
+                android:textSize="@dimen/text_size_large" />
+
+            <com.cartoon.view.game.TagsContainerLayout
+                android:id="@+id/layout_ph_tags"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ph_title"
+                android:layout_marginTop="15.3dp"
+                android:orientation="horizontal">
+
+            </com.cartoon.view.game.TagsContainerLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@id/layout_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/poster_margin"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_play"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="@dimen/btn_favorite_play_width"
+                android:layout_height="@dimen/btn_download_height"
+                android:background="@drawable/play_directly_btn"
+                android:text="@string/mgh_play"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/button_text_size" />
+
+            <Button
+                android:id="@+id/btn_bottom"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="@dimen/btn_favorite_play_width"
+                android:layout_height="@dimen/btn_download_height"
+                android:layout_below="@id/btn_play"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/btn_bg_blue"
+                android:text="@string/delete"
+                android:textColor="@color/base_blue_button_color"
+                android:textSize="@dimen/button_text_size" />
+
+
+            <ImageView
+                android:id="@+id/iv_rating_enable_red_spot"
+                android:layout_width="@dimen/red_spot_diameter"
+                android:layout_height="@dimen/red_spot_diameter"
+                android:src="@drawable/red_spot"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="12dp"
+                android:visibility="gone"
+                android:layout_alignTop="@id/btn_bottom"
+                android:layout_alignRight="@id/btn_bottom"/>
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v_separator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_separator_line_high"
+            android:layout_below="@id/iv_ph_logo"
+            android:layout_marginTop="@dimen/list_view_item_padding_vertical"
+            android:background="@color/separator_line" />
+
+    </RelativeLayout>
+
+    </LinearLayout>

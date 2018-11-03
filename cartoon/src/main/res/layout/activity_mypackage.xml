@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:fitsSystemWindows="true"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/back_title_text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16.7dp"
+        android:background="#fff">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="9.3dp"
+            android:paddingTop="10dp"
+            android:text="法宝数量："
+            android:textSize="13.3sp"
+            android:textColor="#8c8c8c"
+            />
+        <TextView
+            android:id="@+id/magic_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="9.3dp"
+            android:paddingTop="10dp"
+            android:text="0"
+            android:textSize="13.3sp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:layout_marginLeft="12.7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="9.3dp"
+            android:paddingTop="10dp"
+            android:text="灵石数量："
+            android:textSize="13.3sp"
+            android:textColor="#8c8c8c"
+           />
+        <TextView
+            android:id="@+id/bonus_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="9.3dp"
+            android:paddingTop="10dp"
+            android:text="0"
+            android:textSize="13.3sp"
+            android:textColor="#000"
+            />
+
+    </LinearLayout>
+
+    <include layout="@layout/part_line"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FAFAFA"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

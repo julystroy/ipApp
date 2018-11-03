@@ -1,0 +1,1 @@
+include ':cartoon', ':CarttonLibrary', ':daogeneratorlibrary', ':smoothendlesslibrary', ':pickimagelib-release', ':sharelib', ':ViewPagerIndicator', ':Downloader'

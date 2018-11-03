@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#F2F2F2"
+              android:orientation="vertical">
+    <include layout="@layout/title_layout"/>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f4f4f4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="218.7dp"
+                >
+                <ImageView
+                    android:id="@+id/rl_fastblue"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:id="@+id/edit_userinfo"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="编辑"
+                    android:layout_gravity="right"
+                    android:background="@drawable/white_background_tran"
+                    android:gravity="center"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="16.7dp"
+                    android:textSize="13.5sp"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="16.7dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="39.3dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/iv_mine_user_icon"
+                        android:layout_width="78.7dp"
+                        android:layout_height="78.7dp"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop"
+                        android:src="@mipmap/icon_head"/>
+                    <TextView
+                        android:id="@+id/btn_mine_login"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="登录"
+                        android:layout_marginTop="16.7dp"
+                        android:textColor="@color/color_white"
+                        android:textSize="17.3sp"
+                        />
+                    <View
+                        android:layout_width="35dp"
+                        android:layout_height="1.5dp"/>
+                    <TextView
+                        android:id="@+id/tv_mine_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="用户名"
+                        android:layout_marginTop="16.7dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/color_white"
+                        android:textSize="17.3sp"
+                        android:visibility="gone"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/tv_mine_user_stonenum"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center"
+                            android:text="灵石    未知"
+                            android:layout_marginRight="10.7dp"
+                            android:textColor="@color/color_white"
+                            android:textSize="13.4sp"/>
+                        <View
+                            android:background="@color/color_white"
+                            android:layout_width="2dp"
+                            android:layout_height="match_parent"/>
+                        <TextView
+                            android:id="@+id/tv_mine_user_bonuspoint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginLeft="10.3dp"
+                            android:text="等级未知"
+                            android:textColor="@color/color_white"
+                            android:drawableRight="@mipmap/ic_explain"
+                            android:drawablePadding="5dp"
+                            android:textSize="13.4sp"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <include layout="@layout/part_line"/>
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_container_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fbfbfb"
+                android:orientation="vertical"/>
+
+            <include layout="@layout/part_line"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fbfbfb"
+                android:orientation="vertical">
+
+                <include layout="@layout/part_line"/>
+
+                <TextView
+                    android:id="@+id/tv_logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="?attr/selectableItemBackground"
+                    android:gravity="center"
+                    android:text="退出登录"
+                    android:textColor="#E84817"/>
+
+                <include layout="@layout/part_line"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</LinearLayout>

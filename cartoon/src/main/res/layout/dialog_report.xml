@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="341dp"
+              android:layout_height="wrap_content"
+              android:layout_gravity="center"
+              android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bonus_background2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="56.7dp"
+            android:textSize="11.3sp"
+            android:textColor="#a8a8a8"
+            android:text="举报原因"/>
+        <include layout="@layout/part_line"/>
+        <TextView
+            android:id="@+id/first_reason"
+            android:layout_width="match_parent"
+            android:layout_height="56.7dp"
+            android:gravity="center"
+            android:textColor="#2f2f2f"
+            android:textSize="17.3sp"
+            android:text="广告或者垃圾信息"/>
+        <include layout="@layout/part_line"/>
+        <TextView
+            android:id="@+id/second_reason"
+            android:layout_width="match_parent"
+            android:layout_height="56.7dp"
+            android:textSize="17.3sp"
+            android:gravity="center"
+            android:textColor="#2f2f2f"
+            android:text="色情或者淫俗内容"/>
+        <include layout="@layout/part_line"/>
+        <TextView
+            android:id="@+id/thrid_reason"
+            android:layout_width="match_parent"
+            android:layout_height="56.7dp"
+            android:textSize="17.3sp"
+            android:gravity="center"
+            android:textColor="#2f2f2f"
+            android:text="激进时政或者意识形态话题"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/cancel_report"
+        android:layout_marginTop="6.7dp"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:textSize="17.3sp"
+        android:gravity="center"
+        android:background="@drawable/bonus_background2"
+        android:layout_marginBottom="25dp"
+        android:textColor="#2f2f2f"
+        android:text="取消"/>
+
+</LinearLayout>
